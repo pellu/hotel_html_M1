@@ -111,19 +111,19 @@ function w3DisplayData(id, data) {
         a.innerHTML = a.innerHTML.replace(r, result);
     }
 }
-function w3IncludeHTML() {
+function includeHTML() {
   var z, i, elmnt, file, xhttp;
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
-    file = elmnt.getAttribute("w3-include-html");
+    file = elmnt.getAttribute("include-html");
     if (file) {
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           elmnt.innerHTML = this.responseText;
-          elmnt.removeAttribute("w3-include-html");
-          w3IncludeHTML();
+          elmnt.removeAttribute("include-html");
+          includeHTML();
         }
       }      
       xhttp.open("GET", file, true);
