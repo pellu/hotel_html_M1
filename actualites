@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SPA</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<!--[if lt IE 9]>
+	        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ias.min.js"></script>
+    </head>
+    <body>
+    	<header>
+    	</header>
+    	
+    	<h1>Actualités</h1>
+
+        <h2>PARIMIS s’associe à Humane Society International</h2>
+        <img src="img/actualite1.jpg" alt"breakfast">
+        <article>Dans le cadre de l’engagement pris par PARIMIS en avril 2016 de proposer dans ses points de restauration 100% d’œufs – les œufs en coquille et liquides – issus de poules élevées en plein air d’ici 2020, dans les pays où des filières existent, le Groupe annonce aujourd’hui son partenariat avec l’organisation « Humane Society International », afin de réaffirmer son ambition et identifier des solutions responsables notamment dans les régions où ces filières sont inexistantes, difficiles à identifier ou peu développées. PARIMIS éliminera totalement les œufs issus de poules élevées en cage de sa chaîne d’approvisionnement dans les marchés tels que l’Europe à l’horizon 2020 et dans les autres marchés où la réglementation le permet d’ici à 8 ans.</article>
+
+        <h2>Le tourisme se met au service du développement durable</h2>
+        <img src="img/actualite2.jpg" alt="sustainable">
+        <article>La COP 22 a réuni pendant dix jours, à Marrakech, des dizaines de chefs d’Etat et chefs de gouvernement autour des thèmes de l’atténuation des effets du changement climatique et de l’innovation en matière d’adaptation. Dans ces débats, le tourisme prend une place de plus en plus importante tant les enjeux sont fondamentaux. Désormais, rendre le tourisme durable n'est plus une option mais une nécessité afin d'accompagner les Etats dans leur développement, en favorisant l'équilibre entre les dimensions environnementales, économiques et sociales avec pour objectif l'amélioration du cadre de vie des habitants, le renforcement de la gestion durable des ressources naturelles et l'encouragement du recours aux technologies d'énergies propres. </article>
+
+        <h2>Nomination pour les « Haute Grandeur Awards » 2017</h2>
+        <img src="img/actualite3.jpg" alt="awards">
+        <article>Les nominations sont faites tout au long de l’année par les visiteurs.  Chaque candidature est strictement évaluée par trustyou.com, leur partenaire mondial, qui s’assure que les meilleurs hôtels de la planète figurent sur cette prestigieuse liste des prétendants au titre. L’Hôtel Heritage est candidat pour le titre de « Best Boutique Hotel in Belgium »</article>
+
+
+
+    	<footer>
+    	</footer>
+    </body>
+</html>
