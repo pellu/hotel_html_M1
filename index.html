@@ -45,6 +45,41 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
+<style>
+  #panier{
+    background-color: transparent;
+    color: #008080;
+    margin-left: 50px;
+    border-bottom: none;
+  }
+  #panier span{
+    display: none;
+    visibility: hidden;
+  }
+  #actif, #actif:hover{
+    background-color: transparent;
+    color: #008080; 
+  }
+  #hover:hover{
+    background-color: transparent;
+    color: #008080;
+  }
+  @media screen and (max-width: 768px) {
+    #panier {
+    margin-left: 0px;
+    }
+    #panier span{
+      display: block;
+      visibility: visible;
+    }
+  }
+  footer{
+    background-color: #1f1c1b;
+  }
+  footer .foot-header{
+    margin-top: 30px;
+  }
+</style>
 <body class="onepage front" data-spy="scroll" data-target="#top1" data-offset="202">
   <div id="load"></div>
   <div id="main">
@@ -59,26 +94,33 @@
                 </a>
               </div>
             </header>
-            <div class="navbar navbar_ navbar-default">
+            <div class="navbar navbar_ navbar-right">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <div class="navbar-collapse navbar-collapse_ collapse">
+              <div class="navbar-collapse navbar-collapse_ collapse navbar-left">
                 <ul class="nav navbar-nav sf-menu clearfix">
                   <li class="sub-menu sub-menu-1"><a href="#home">Hôtel<em class="fa fa-angle-down"></em></a>
                     <ul>
-                      <li><a href="#quisommesnous">•&nbsp;&nbsp;&nbsp;Qui sommes-nous ?</a></li>
-                      <li><a href="#acces">•&nbsp;&nbsp;&nbsp;Accès</a></li>
-                      <li><a href="#contact">•&nbsp;&nbsp;&nbsp;Contact</a></li>
+                      <li><a href="#quisommesnous">Qui sommes-nous ?</a></li>
+                      <li><a href="#acces">Accès</a></li>
+                      <li><a href="#contact">Contact</a></li>
                     </ul>
                   </li>
                   <li><a href="#chambres">Chambres</a></li>
                   <li><a href="#restaurant">Restaurant</a></li>
                   <li><a href="#spa">SPA</a></li>
                   <li><a href="#contacts">contact</a></li>
+                  <li><a id="panier" href="#panier"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Panier</span></a></li>
+                  <li class="sub-menu sub-menu-1"><a href="#langue">Langue<em class="fa fa-angle-down"></em></a>
+                    <ul>
+                      <li><a href="#fr">FR</a></li>
+                      <li><a href="#en">EN</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -87,17 +129,27 @@
       </div>
     </div>
     <div id="home">
-      <div id="coverhome"></div>
-      <!--<img src="" width="100%" alt="" style="max-height: 800px;" class="img-responsive">-->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+        <!-- Indicators -->
+        <div class="carousel-inner">
+          <div class="item active"> <img src="img/16443518_10212123970595013_918404472_n.jpg" style="width:100%" alt="First slide">
+          </div>
+          <div class="item"> <img src="img/16466452_10212123973435084_617396739_o.jpg" style="width:100%" data-src="" alt="Second slide">
+          </div>
+          <div class="item"> <img src="img/16491428_10212123970435009_1605810203_o.jpg" style="width:100%" data-src="" alt="Third slide">
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
       <div class="slider_tabs">
         <div class="tabs1">
           <div class="tabs1_tabs">
             <div class="container">
               <ul>
-                <li><a href="#tabs-1">hotels</a></li>
-                <li><a href="#tabs-2">flights</a></li>
-                <li><a href="#tabs-3">cars</a></li>
-                <li><a href="#tabs-4">CRUISES</a></li>
+                <li><a href="#tabs-1">Hôtel</a></li>
+                <li><a href="#tabs-2">Restaurant</a></li>
+                <li><a href="#tabs-3">SPA</a></li>
+                <li><a href="#tabs-4">Recherche</a></li>
               </ul>
             </div>
           </div>
@@ -106,59 +158,56 @@
               <div id="tabs-1">
                 <form action="javascript:;" class="form1">
                   <div class="row">
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-sm-2 col-md-2">
                       <div class="select1_wrapper">
-                        <label>City or Hotel Name</label>
+                        <label>Chambres</label>
                         <div class="select1_inner">
                           <select class="select2 select" style="width: 100%">
-                            <option value="1">Enter a destination or hotel name</option>
-                            <option value="2">Lorem ipsum dolor sit amet</option>
-                            <option value="3">Duis autem vel eum</option>
-                            <option value="4">Ut wisi enim ad minim veniam</option>
-                            <option value="5">Nam liber tempor cum</option>
-                            <option value="6">At vero eos et accusam et</option>
-                            <option value="7">Consetetur sadipscing elitr</option>
-                            <option value="8">Sed diam nonumy</option>
+                            <option value="1">Suite</option>
+                            <option value="2">De luxe</option>
+                            <option value="3">Confort</option>
+                            <option value="4">Classique</option>
                           </select>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-3 col-md-3">
                       <div class="input1_wrapper">
-                        <label>Check-In</label>
+                        <label>Arrivée</label>
                         <div class="input1_inner">
                           <input type="text" class="input datepicker" value="Mm/Dd/Yy">
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-3 col-md-3">
                       <div class="input1_wrapper">
-                        <label>Check-Out</label>
+                        <label>Départ</label>
                         <div class="input1_inner">
                           <input type="text" class="input datepicker" value="Mm/Dd/Yy">
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-1 col-md-1">
                       <div class="select1_wrapper">
-                        <label>Adults</label>
+                        <label>Personnes</label>
                         <div class="select1_inner">
                           <select class="select2 select" style="width: 100%">
-                            <option value="1">Room  for  1  adult</option>
-                            <option value="2">Room  for  2  adult</option>
-                            <option value="3">Room  for  3  adult</option>
-                            <option value="4">Room  for  4  adult</option>
-                            <option value="5">Room  for  5  adult</option>
-                            <option value="6">Room  for  6  adult</option>
-                            <option value="7">Room  for  7  adult</option>
-                            <option value="8">Room  for  8  adult</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="8">9</option>
                           </select>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-3 col-md-3">
                       <div class="button1_wrapper">
-                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-search"></i>search now</button>
+                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-shopping-cart"></i>Réserver</button>
                       </div>
                     </div>
                   </div>
@@ -167,59 +216,25 @@
               <div id="tabs-2">
                 <form action="" class="form1">
                   <div class="row">
-                    <div class="col-sm-4 col-md-2">
-                      <div class="select1_wrapper">
-                        <label>Origin</label>
-                        <div class="select1_inner">
-                          <select class="select2 select" style="width: 100%">
-                            <option value="1">Name of City</option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2">
-                      <div class="select1_wrapper">
-                        <label>Destinaion</label>
-                        <div class="select1_inner">
-                          <select class="select2 select" style="width: 100%">
-                            <option value="1">Name of City</option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-3 col-md-3">
                       <div class="input1_wrapper">
-                        <label>Departure date</label>
+                        <label>Date</label>
                         <div class="input1_inner">
                           <input type="text" class="input datepicker" value="Mm/Dd/Yy">
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 col-md-2">
-                      <div class="input1_wrapper">
-                        <label>Return date</label>
-                        <div class="input1_inner">
-                          <input type="text" class="input datepicker" value="Mm/Dd/Yy">
+                    <div class="col-sm-3 col-md-3">
+                      <div class="select1_wrapper">
+                        <label>Heure</label>
+                        <div class="select1_inner">
+                          Ajout champs heure
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 col-md-1">
-                      <div class="select1_wrapper select2_wrapper">
-                        <label>Passengers</label>
+                    <div class="col-sm-3 col-md-3">
+                      <div class="input1_wrapper">
+                        <label>Nombre de personnes</label>
                         <div class="select1_inner select2_inner">
                           <select class="select2 select select3" style="width: 100%">
                             <option value="1">01</option>
@@ -234,21 +249,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 col-md-1">
-                      <div class="select1_wrapper select2_wrapper">
-                        <label>Class</label>
-                        <div class="select1_inner select2_inner">
-                          <select class="select2 select select3" style="width: 100%">
-                            <option value="1">Economy</option>
-                            <option value="2">Business</option>
-                            <option value="3">Luxury</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-3 col-md-3">
                       <div class="button1_wrapper">
-                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-search"></i>search now</button>
+                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-shopping-cart"></i>Réserver</button>
                       </div>
                     </div>
                   </div>
@@ -257,78 +260,39 @@
               <div id="tabs-3">
                 <form action="" class="form1">
                   <div class="row">
-                    <div class="col-sm-4 col-md-2">
-                      <div class="select1_wrapper">
-                        <label>Country</label>
-                        <div class="select1_inner">
-                          <select class="select2 select" style="width: 100%">
-                            <option value="1">Please Select</option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2">
-                      <div class="select1_wrapper">
-                        <label>City</label>
-                        <div class="select1_inner">
-                          <select class="select2 select" style="width: 100%">
-                            <option value="1">Please Select</option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2">
-                      <div class="select1_wrapper">
-                        <label>Location</label>
-                        <div class="select1_inner">
-                          <select class="select2 select" style="width: 100%">
-                            <option value="1">Please Select</option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-3 col-md-3">
                       <div class="input1_wrapper">
-                        <label>Pick up Date</label>
+                        <label>Date</label>
                         <div class="input1_inner">
                           <input type="text" class="input datepicker" value="Mm/Dd/Yy">
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 col-md-2">
-                      <div class="input1_wrapper">
-                        <label>Drop off Date</label>
-                        <div class="input1_inner">
-                          <input type="text" class="input datepicker" value="Mm/Dd/Yy">
+                    <div class="col-sm-3 col-md-3">
+                      <div class="select1_wrapper">
+                        <label>Heure</label>
+                        <div class="select1_inner">
+                          Ajout champs heure
                         </div>
                       </div>
                     </div>
-
-
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-3 col-md-3">
+                      <div class="input1_wrapper">
+                        <label>Type de soins</label>
+                        <div class="select1_inner select2_inner">
+                          <select class="select2 select select3" style="width: 100%">
+                            <option value="1">Détente</option>
+                            <option value="2">Découverte</option>
+                            <option value="3">Relaxant</option>
+                            <option value="4">Plaisir</option>
+                            <option value="5">Evasion</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
                       <div class="button1_wrapper">
-                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-search"></i>search now</button>
+                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-shopping-cart"></i>Réserver</button>
                       </div>
                     </div>
                   </div>
@@ -337,76 +301,17 @@
               <div id="tabs-4">
                 <form action="" class="form1">
                   <div class="row">
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-9 col-md-9">
                       <div class="select1_wrapper">
-                        <label>Sail to:</label>
-                        <div class="select1_inner">
-                          <select class="select2 select" style="width: 100%">
-                            <option value="1">All destinations</option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                          </select>
+                        <label>Recherche</label>
+                        <div class="select1_inner search">
+                          <input type="text" placeholder="Votre recherche" name="">
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 col-md-2">
-                      <div class="input1_wrapper">
-                        <label>Start Date:</label>
-                        <div class="input1_inner">
-                          <input type="text" class="input datepicker" value="From any month">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2">
-                      <div class="input1_wrapper">
-                        <label>End of Date:</label>
-                        <div class="input1_inner">
-                          <input type="text" class="input datepicker" value="To any month">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2">
-                      <div class="select1_wrapper">
-                        <label>Sail from:</label>
-                        <div class="select1_inner">
-                          <select class="select2 select" style="width: 100%">
-                            <option value="1">All ports</option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2">
-                      <div class="select1_wrapper">
-                        <label>Cruise Ship</label>
-                        <div class="select1_inner">
-                          <select class="select2 select" style="width: 100%">
-                            <option value="1">All Ships</option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-2">
+                    <div class="col-sm-3 col-md-3">
                       <div class="button1_wrapper">
-                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-search"></i>search now</button>
+                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-search"></i>Recherche</button>
                       </div>
                     </div>
                   </div>
@@ -418,26 +323,19 @@
       </div>
     </div>
 
-    <style>
-      #coverhome{
-        background: url(img/16444057_10212122715843645_1629681750_o.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-      }
-      @media(max-width: 991px) {
-        #coverhome {
-          height: 60vh;
-        }
-      }
-      @media screen(max-width: 650px) {
-        #coverhome {
-          height: 40vh;
-        }
-      }
-    </style>
-
     <style type="text/css">
+    .search.select1_inner:before,.search.select1_inner:after{
+      background:none;
+      display: none;
+    }
+    .ui-widget input{
+    background-color: transparent;
+    border-color: transparent;
+    width: 100%;
+    padding-left: 30px;
+    color: #1f1c1b;
+    outline: none;
+    }
       .scrolloff {
         pointer-events: none;
       }
@@ -459,65 +357,61 @@
       });
     </script>
 
-<div class="jquery-script-clear"></div>
-</div>
-</div>
-<h1 style="margin-top:150px; margin-bottom:30px" align="center">jQuery & Bootstrap Carousel Demo</h1>
-<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
-  <!-- Indicators -->
-  
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="item active"> <img src="http://lorempixel.com/1200/400/sports" style="width:100%" alt="First slide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Slide 1</h1>
-          <p>Aenean a rutrum nulla. Vestibulum a arcu at nisi tristique pretium.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+<h2>L'hôtel</h2>
+      <p>L'hôtel Parimis, situé au coeur de Paris, dispense des prestations de qualité et propose un service 5 étoiles pour sa clientèle. Que vous soyez de passage pour un rendez-vous d'affaire, ou que vous souhaitiez passer des vacances luxueuses, venez nous voir. Nos prestations seront sans nul doute à la hauteur de vos exigeances.</p>
+
+      <h2>Un service luxueux</h2>
+      <p>L'accueil personnalisé représente un point clé du service de l'hôtel Parimis. Nos chambres proposent des prestations adaptées à vos besoins et suivant vos envies. Les soins dispensés au spa sont à la carte. Les menus de notre restaurant aussi.</p>
+
+
+<footer>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="foot-header">
+            Newsletter :
+          </div>
+          <form id="search_form" class="navbar-form navbar-left navbar-input-group " role="search" action="http://localhost/veganpictures/search/" method="POST">
+              <div class="input-group">
+                <div class="form-group">
+                  <input name="search" type="text" class="form-control typeahead" value="" placeholder="Adresse mail" autofocus="autofocus" required="">
+                </div>
+                <span class="input-group-btn">
+                  <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
+                </span>
+              </div>
+            </form>
         </div>
-      </div>
-    </div>
-    <div class="item"> <img src="http://lorempixel.com/1200/400/people" style="width:100%" data-src="" alt="Second    slide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Slide 2</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae egestas purus. </p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+        <div class="col-sm-4">
+          <div class="foot-header">
+            Evènement :
+          </div>
+          <div class="foot-links">
+            <a href="" class='active' onclick="document.location='http://localhost/veganpictures/en.php'; return false">English</a>
+            <a href=""  onclick="document.location='http://localhost/veganpictures/fr.php'; return false">Français</a>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="item"> <img src="http://lorempixel.com/1200/400/abstract" style="width:100%" data-src="" alt="Third slide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Slide 3</h1>
-          <p>Donec sit amet mi imperdiet mauris viverra accumsan ut at libero.</p>
-          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+        <div class="col-sm-4">
+          <div class="foot-header">
+            Plus d'informations :
+          </div>
+          <div class="foot-links">
+            <a href="">Legal Notice</a>
+            <a href="">Terms of Service</a>
+            <a href="">Report Problems</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
-
-
-
-    <div class="bot2">
-      <div class="container">
-        <ul class="menu_bot clearfix">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Forum</a></li>
-        </ul>
-        <div class="copy">&copy; 2016 All rights reserved. Travel Company</div>
-      </div>
+  <div id="lastfooter">
+    <div class="container">
+      <p class="centered"> IESA Multimédia | <a href="#" target="_blank">Mentions légales</a> | <a href="#" target="_blank">Conditions générales de Ventes</a> | <a href="#" target="_blank">Imprimer la page</a></p>
     </div>
   </div>
+</div>
+</footer>
   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
