@@ -46,40 +46,21 @@
   <![endif]-->
 </head>
 <style>
-  #panier{
-    background-color: transparent;
-    color: #008080;
-    margin-left: 50px;
-    border-bottom: none;
-  }
-  #panier span{
-    display: none;
-    visibility: hidden;
-  }
-  #actif, #actif:hover{
-    background-color: transparent;
-    color: #008080; 
-  }
-  #hover:hover{
-    background-color: transparent;
-    color: #008080;
-  }
-  @media screen and (max-width: 768px) {
-    #panier {
-    margin-left: 0px;
-    }
-    #panier span{
-      display: block;
-      visibility: visible;
-    }
-  }
-  footer{
-    background-color: #1f1c1b;
-  }
-  footer .foot-header{
-    margin-top: 30px;
-  }
+
+
 </style>
+<script>
+    //Activer le hover dropdown
+    $(document).ready(function() {
+      $('.js-activated').dropdownHover().dropdown();
+    });
+    //Activer rotate burger
+    $(document).ready(function () {
+        $(".navbar-toggle").on("click", function () {
+            $(this).toggleClass("active");
+        });
+    });
+</script>
 <body class="onepage front" data-spy="scroll" data-target="#top1" data-offset="202">
   <div id="load"></div>
   <div id="main">
@@ -89,8 +70,8 @@
           <div class="top2 clearfix">
             <header>
               <div class="logo_wrapper">
-                <a href="#home" class="logo scroll-to">
-                  <img src="img/16443494_10212123291498036_666830644_n.png" alt="" width="60%" class="img-responsive">
+                <a href="index.html" class="logo scroll-to">
+                  <img src="img/16443494_10212123291498036_666830644_n.png" alt="Parimis" width="60%" class="img-responsive">
                 </a>
               </div>
             </header>
@@ -322,27 +303,40 @@
         </div>
       </div>
     </div>
+    <div class="hotelhistorique">
+      <h2>Un hôtel historique</h2>
+    </div>
+ <div class="col-sm-6 col-md-6">
+          <img widyh="100%" src="img/16491428_10212123970435009_1605810203_o.jpg" alt="">
+        </div>
 
-    <style type="text/css">
-    .search.select1_inner:before,.search.select1_inner:after{
-      background:none;
-      display: none;
-    }
-    .ui-widget input{
-    background-color: transparent;
-    border-color: transparent;
-    width: 100%;
-    padding-left: 30px;
-    color: #1f1c1b;
-    outline: none;
-    }
-      .scrolloff {
-        pointer-events: none;
-      }
-      .maps iframe{
-        pointer-events: none;
-      }
-    </style>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <img widyh="100%" src="img/16491428_10212123970435009_1605810203_o.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <h2>L'hôtel</h2>
+          <p>L'hôtel Parimis, situé au coeur de Paris, dispense des prestations de qualité et propose un service 5 étoiles pour sa clientèle. Que vous soyez de passage pour un rendez-vous d'affaire, ou que vous souhaitiez passer des vacances luxueuses, venez nous voir. Nos prestations seront sans nul doute à la hauteur de vos exigeances.</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <h2>Un service luxueux</h2>
+          <p>L'accueil personnalisé représente un point clé du service de l'hôtel Parimis. Nos chambres proposent des prestations adaptées à vos besoins et suivant vos envies. Les soins dispensés au spa sont à la carte. Les menus de notre restaurant aussi.</p>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <img width="100%" src="img/16491428_10212123970435009_1605810203_o.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+L'hôtel Parimis est, sans conteste, l'un des plus beaux hôtels de Paris. Il est désormais l'un des 16 Palaces de France et figure au palmarès du Leading Hôtels of the World.
+L'hôtel Parimis  5 étoiles entièrement rénové, est l'emblème de la tradition hôtelière parisienne.
+Ssitué au coeur de Paris, dispense des prestations de haute qualité et propose un service 5 étoiles pour sa clientèle.
+Que vous soyez de passage pour un rendez-vous d'affaire, ou que vous souhaitiez passer des vacances luxueuses, réservez votre chambre ou suite à l'hôtel Parimis directement en ligne. Nos prestations sont à la hauteur de vos exigences.
+Nos services de luxe
+L'accueil personnalisé représente un point clé du service de l'hôtel Parimis. Nos chambres proposent des prestations adaptées à vos besoins et suivant vos envies. Les soins dispensés au spa sont à la carte. Les menus de notre restaurant également.
 
     <div class='embed-container maps'>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10498.563491877268!2d2.3019885!3d48.8650582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x533b1319048c8ee2!2sH%C3%B4tel+Parimis!5e0!3m2!1sen!2sfr!4v1485948685680" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -357,61 +351,56 @@
       });
     </script>
 
-<h2>L'hôtel</h2>
-      <p>L'hôtel Parimis, situé au coeur de Paris, dispense des prestations de qualité et propose un service 5 étoiles pour sa clientèle. Que vous soyez de passage pour un rendez-vous d'affaire, ou que vous souhaitiez passer des vacances luxueuses, venez nous voir. Nos prestations seront sans nul doute à la hauteur de vos exigeances.</p>
+Contact formulaire
 
-      <h2>Un service luxueux</h2>
-      <p>L'accueil personnalisé représente un point clé du service de l'hôtel Parimis. Nos chambres proposent des prestations adaptées à vos besoins et suivant vos envies. Les soins dispensés au spa sont à la carte. Les menus de notre restaurant aussi.</p>
-
-
-<footer>
-  <div id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="foot-header">
-            Newsletter :
-          </div>
-          <form id="search_form" class="navbar-form navbar-left navbar-input-group " role="search" action="http://localhost/veganpictures/search/" method="POST">
-              <div class="input-group">
-                <div class="form-group">
-                  <input name="search" type="text" class="form-control typeahead" value="" placeholder="Adresse mail" autofocus="autofocus" required="">
-                </div>
-                <span class="input-group-btn">
-                  <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
-                </span>
+    <footer>
+      <div id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="foot-header">
+                Newsletter :
               </div>
-            </form>
-        </div>
-        <div class="col-sm-4">
-          <div class="foot-header">
-            Evènement :
-          </div>
-          <div class="foot-links">
-            <a href="" class='active' onclick="document.location='http://localhost/veganpictures/en.php'; return false">English</a>
-            <a href=""  onclick="document.location='http://localhost/veganpictures/fr.php'; return false">Français</a>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="foot-header">
-            Plus d'informations :
-          </div>
-          <div class="foot-links">
-            <a href="">Legal Notice</a>
-            <a href="">Terms of Service</a>
-            <a href="">Report Problems</a>
+              <form id="search_form" class="navbar-form navbar-left navbar-input-group" action="" method="POST">
+                <div class="input-group">
+                  <div class="form-group">
+                    <input name="email" type="email" value="" placeholder="Adresse mail" autofocus="autofocus" required="">
+                  </div>
+                  <span class="input-group-btn">
+                    <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
+                  </span>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-4">
+              <div class="foot-header">
+                Évènement :
+              </div>
+              <div class="foot-links">
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Évènements, soirées spéciales</a></li>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="foot-header">
+                Plus d'informations :
+              </div>
+              <div class="foot-links">
+                <li><a href="#">Espace presse</a></li>
+                <li><a href="#">Recrutement</a></li>
+                <li><a href="#">Plan du site</a></li>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div id="lastfooter">
+        <div class="container">
+          <p class="centered"> IESA Multimédia | <a href="#" target="_blank">Mentions légales</a> | <a href="#" target="_blank">Conditions générales de Ventes</a> | <a href="#" target="_blank">Imprimer la page</a></p>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="lastfooter">
-    <div class="container">
-      <p class="centered"> IESA Multimédia | <a href="#" target="_blank">Mentions légales</a> | <a href="#" target="_blank">Conditions générales de Ventes</a> | <a href="#" target="_blank">Imprimer la page</a></p>
-    </div>
-  </div>
-</div>
-</footer>
+  </footer>
   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
