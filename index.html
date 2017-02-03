@@ -300,157 +300,149 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-6 col-md-6">
+      <div class="hotelhistorique">
+        <h2>Un hôtel historique</h2>
+      </div>
+    <div class="row  divwhite">
+      <div class="col-sm-8 col-md-8 divwhite">
         <img width="100%" src="img/16491428_10212123970435009_1605810203_o.jpg" alt="hôtel parimis">
       </div>
-      <div class="col-sm-6 col-md-6">
-        <h2>L'hôtel</h2>
+      <div class="col-sm-4 col-md-4 divwhite presentationhotelhome">
         <p>L'hôtel Parimis, réputé mondialement pour son service de qualité se situe avenue Montaigne, une des avenues les plus connus de Paris. Découvrez des services de qualités notamment un spa, un restaurant gastronomique et des chambres et suites luxueuse.</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6 col-md-6">
-        <h2>Un service luxueux</h2>
-          <p>Découvrez un personnel qualifié et formé pour répondre à vos désirs. Retrouvez le luxe à la française au sein de notre hôtel ayant gagner plusieurs prix dont le golden hospitality reward et le gouvernent Awards.</p>
+      <div class="col-sm-4 col-md-4 presentationhotelhome">
+        <p>Découvrez un personnel qualifié et formé pour répondre à vos désirs. Retrouvez le luxe à la française au sein de notre hôtel ayant gagner plusieurs prix dont le golden hospitality reward et le gouvernent Awards.</p>
       </div>
-      <div class="col-sm-6 col-md-6">
+      <div class="col-sm-8 col-md-8">
         <img width="100%" src="img/16491428_10212123970435009_1605810203_o.jpg" alt="hôtel parimis">
       </div>
     </div>
-
-
-
-
-  <div class="row">
-    <div class="col-sm-6 col-md-6 descriptionhotelhome">
-      <h1>Le Parimis</h1>
-      <p>L'hôtel Parimis est, sans conteste, l'un des plus beaux hôtels de Paris. Il est désormais l'un des 16 Palaces de France et figure au palmarès du Leading Hôtels of the World.L'hôtel Parimis 5 étoiles entièrement rénové, est l'emblème de la tradition hôtelière parisienne. Situé au coeur de Paris, dispense des prestations de haute qualité et propose un service 5 étoiles pour sa clientèle.Que vous soyez de passage pour un rendez-vous d'affaire, ou que vous souhaitiez passer des vacances luxueuses, réservez votre chambre ou suite à l'hôtel Parimis directement en ligne. Nos prestations sont à la hauteur de vos exigences.
-        Nos services de luxe
-        L'accueil personnalisé représente un point clé du service de l'hôtel Parimis. Nos chambres proposent des prestations adaptées à vos besoins et suivant vos envies. Les soins dispensés au spa sont à la carte. Les menus de notre restaurant également.</p>
-      </div>
-      <div class="col-sm-6 col-md-6">
-        <style type="text/css">
-          .embed-container iframe{
-            width: 100%;
-          }
-        </style>
-        <div class='embed-container maps'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10498.563491877268!2d2.3019885!3d48.8650582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x533b1319048c8ee2!2sH%C3%B4tel+Parimis!5e0!3m2!1sen!2sfr!4v1485948685680" height="450" style="border:0" allowfullscreen></iframe>
+    <div class="row">
+      <div class="col-sm-6 col-md-6 descriptionhotelhome">
+        <h1>Le Parimis</h1>
+        <p>L'hôtel Parimis est, sans conteste, l'un des plus beaux hôtels de Paris. Il est désormais l'un des 16 Palaces de France et figure au palmarès du Leading Hôtels of the World.L'hôtel Parimis 5 étoiles entièrement rénové, est l'emblème de la tradition hôtelière parisienne. Situé au coeur de Paris, dispense des prestations de haute qualité et propose un service 5 étoiles pour sa clientèle.Que vous soyez de passage pour un rendez-vous d'affaire, ou que vous souhaitiez passer des vacances luxueuses, réservez votre chambre ou suite à l'hôtel Parimis directement en ligne. Nos prestations sont à la hauteur de vos exigences.
+          Nos services de luxe
+          L'accueil personnalisé représente un point clé du service de l'hôtel Parimis. Nos chambres proposent des prestations adaptées à vos besoins et suivant vos envies. Les soins dispensés au spa sont à la carte. Les menus de notre restaurant également.</p>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <div class='embed-container maps'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10498.563491877268!2d2.3019885!3d48.8650582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x533b1319048c8ee2!2sH%C3%B4tel+Parimis!5e0!3m2!1sen!2sfr!4v1485948685680" height="450" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <script>
+          $('.maps').click(function () {
+            $('.maps iframe').css("pointer-events", "auto");
+          });
+          $( ".maps" ).mouseleave(function() {
+            $('.maps iframe').css("pointer-events", "none"); 
+          });
+        </script>
+        <div id="parallax1" class="parallax">
+          <div class="bg1 parallax-bg"></div>
+          <div class="overlay"></div>
+          <div class="parallax-content">
+            <div class="container">
+              <div class="backcontact col-sm-12 col-md-12">
+                <form method="POST" id="contact" action="#">
+                  <div class="col-sm-8 col-md-8">
+                    <div class="col-sm-4 col-md-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="nom" placeholder="Nom" value="" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="prenom" placeholder="Prénom" value="" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="adressemail" placeholder="Adresse mail" value="" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                      <div class="form-group">
+                        <textarea class="form-control" name="message" placeholder="Votre message.." required></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4 contacttext">
+                    <h1>Contact</h1>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetuer adipiscing elit, sed
+                      diam nonummy nibh euismod tincidunt
+                      ut laoreet dolore magna aliquam
+                      erat volutpat. Ut wisi enim ad
+                      minim veniam, quis nostrud exerci
+                      tation ullamcorper suscipit lobortis
+                    </p>
+                    <button type="submit" name="submit" class="btn btn-default">Envoyer</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <script>
-        $('.maps').click(function () {
-          $('.maps iframe').css("pointer-events", "auto");
-        });
-        $( ".maps" ).mouseleave(function() {
-          $('.maps iframe').css("pointer-events", "none"); 
-        });
-      </script>
-      <div id="parallax1" class="parallax">
-        <div class="bg1 parallax-bg"></div>
-        <div class="overlay"></div>
-        <div class="parallax-content">
-          <div class="container">
-            <div class="backcontact col-sm-12 col-md-12">
-              <form method="POST" id="contact" action="#">
-                <div class="col-sm-8 col-md-8">
-                  <div class="col-sm-4 col-md-4">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="nom" placeholder="Nom" value="" required>
-                    </div>
+    </div>
+    <footer>
+      <div id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="foot-header">
+                Newsletter :
+              </div>
+              <form id="search_form" class="col-md-6 navbar-form navbar-left navbar-input-group" action="#" method="POST">
+                <div class="input-group">
+                  <div class="form-group">
+                    <input name="email" type="email" value="" placeholder="Adresse mail" required>
                   </div>
-                  <div class="col-sm-4 col-md-4">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="prenom" placeholder="Prénom" value="" required>
-                    </div>
-                  </div>
-                  <div class="col-sm-4 col-md-4">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="adressemail" placeholder="Adresse mail" value="" required>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12">
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="Votre message.." required></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-4 contacttext">
-                  <h1>Contact</h1>
-                  <p>Lorem ipsum dolor sit amet,
-                    consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt
-                    ut laoreet dolore magna aliquam
-                    erat volutpat. Ut wisi enim ad
-                    minim veniam, quis nostrud exerci
-                    tation ullamcorper suscipit lobortis
-                  </p>
-                  <button type="submit" name="submit" class="btn btn-default">Envoyer</button>
+                  <span class="input-group-btn">
+                    <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
+                  </span>
                 </div>
               </form>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="foot-header">
-              Newsletter :
-            </div>
-            <form id="search_form" class="col-md-6 navbar-form navbar-left navbar-input-group" action="#" method="POST">
-              <div class="input-group">
-                <div class="form-group">
-                  <input name="email" type="email" value="" placeholder="Adresse mail" required>
-                </div>
-                <span class="input-group-btn">
-                  <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
-                </span>
+            <div class="col-sm-4">
+              <div class="foot-header">
+                Évènement :
               </div>
-            </form>
-          </div>
-          <div class="col-sm-4">
-            <div class="foot-header">
-              Évènement :
+              <div class="foot-links">
+                <ul>
+                  <li><a href="#">Actualités</a></li>
+                  <li><a href="#">Évènements, soirées spéciales</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="foot-links">
-              <ul>
-                <li><a href="#">Actualités</a></li>
-                <li><a href="#">Évènements, soirées spéciales</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="foot-header">
-              Plus d'informations :
-            </div>
-            <div class="foot-links">
-              <ul>
-                <li><a href="#">Espace presse</a></li>
-                <li><a href="#">Recrutement</a></li>
-                <li><a href="#">Plan du site</a></li>
-              </ul>
+            <div class="col-sm-4">
+              <div class="foot-header">
+                Plus d'informations :
+              </div>
+              <div class="foot-links">
+                <ul>
+                  <li><a href="#">Espace presse</a></li>
+                  <li><a href="#">Recrutement</a></li>
+                  <li><a href="#">Plan du site</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="lastfooter">
-      <div class="container">
-        <p class="centered"> IESA Multimédia | <a href="#" target="_blank">Mentions légales</a> | <a href="#" target="_blank">Conditions générales de Ventes</a> | <a href="#" onclick="imprimer_page()" target="_blank">Imprimer la page</a></p>
+      <div id="lastfooter">
+        <div class="container">
+          <p class="centered"> IESA Multimédia | <a href="#" target="_blank">Mentions légales</a> | <a href="#" target="_blank">Conditions générales de Ventes</a> | <a href="#" onclick="imprimer_page()" target="_blank">Imprimer la page</a></p>
+        </div>
       </div>
-    </div>
-  </footer>
-  <script>
-    function imprimer_page(){
-      window.print();
-    }
-  </script>
-  <script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+    </footer>
+    <script>
+      function imprimer_page(){
+        window.print();
+      }
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
