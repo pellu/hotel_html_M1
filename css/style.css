@@ -597,29 +597,72 @@ footer .foot-header{
 	color: white;
 	border-bottom: 2px solid white;
 	padding-bottom: 10px;
-    font-size: 20px;
+	font-size: 20px;
 }
 footer .foot-links li a{
 	color: #ffffff!important;
-	margin-left: -15px;
 }
 footer .foot-links li a:hover{
 	color:#008080!important;
+}
+footer ul{
+	margin-left: -20px;
 }
 footer li{
 	color: white;
 }
 footer .navbar-form {
-    overflow: auto;
-    margin-left: -13px;
+	overflow: auto;
+	margin-left: -13px;
 }
 footer .navbar-form .form-control {
-    display: inline-block;
-    width: 100%; 
-    vertical-align: middle;
+	display: inline-block;
+	width: 80%;
+	vertical-align: middle;
 }
 footer .navbar-form .form-group {
-    display: inline;
+	display: inline;
+}
+footer .input-group-btn:last-child > .btn{
+	background-color: #008080;
+	border:#008080;
+	border-radius: 0px;
+}
+footer .input-group-btn:last-child > .btn:focus{
+	background-color: #008080;
+	border:#008080;
+	border-radius: 0px;
+}
+footer input{
+	color: black;
+	width: 320px;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	footer input{
+		width: 254px;
+	}
+}
+@media (min-width: 668px) and (max-width: 991px){
+	footer input{
+		width: 181px;
+	}
+}
+@media (max-width: 667px){
+	footer input{
+		width: 100%;
+	}
+}
+footer input::-webkit-input-placeholder{
+	color: black;
+}
+footer input:-moz-placeholder { 
+	color: black;
+}
+footer input::-moz-placeholder {
+	color: black;
+}
+footer input:-ms-input-placeholder {
+	color: black;
 }
 /* ============================= parallax ====================== */
 .parallax {width: 100%; position: relative; overflow: hidden; background: none; padding-top: 90px; padding-bottom: 90px; }

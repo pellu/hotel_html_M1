@@ -1,27 +1,25 @@
-//
-
 /*----------------------------------------------------*/
 /* MOBILE DETECT FUNCTION
 /*----------------------------------------------------*/
 var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
+  Android: function() {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function() {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function() {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function() {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function() {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function() {
+    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+  }
 };
 
 
@@ -44,8 +42,8 @@ $(document).ready(function() {
 
   // datapicker
   $( ".datepicker" ).datepicker({
-     orientation: "top"
-  });
+   orientation: "top"
+ });
 
   // Accordion.
   $( ".accordion" ).accordion({
@@ -118,7 +116,7 @@ $(document).ready(function() {
         easing: "easeOutExpo"
       },
       items: {
-            width: '1000',
+        width: '1000',
         height: 'variable', //  optionally resize item-height
         visible: {
           min: 1,
@@ -129,7 +127,7 @@ $(document).ready(function() {
       swipe: {
         onMouse: true,
         onTouch: true
-        }
+      }
     });
   }
 
@@ -150,7 +148,7 @@ $(document).ready(function() {
         easing: "easeOutExpo"
       },
       items: {
-            width: '1000',
+        width: '1000',
         height: 'variable', //  optionally resize item-height
         visible: {
           min: 1,
@@ -161,7 +159,7 @@ $(document).ready(function() {
       swipe: {
         onMouse: true,
         onTouch: true
-        }
+      }
     });
   }
 
@@ -182,7 +180,7 @@ $(document).ready(function() {
         easing: "easeOutExpo"
       },
       items: {
-            width: '2000',
+        width: '2000',
         height: 'variable', //  optionally resize item-height
         visible: {
           min: 1,
@@ -193,7 +191,7 @@ $(document).ready(function() {
       swipe: {
         onMouse: true,
         onTouch: true
-        }
+      }
     });
   }
 
@@ -214,7 +212,7 @@ $(document).ready(function() {
         easing: "easeOutExpo"
       },
       items: {
-            width: '2000',
+        width: '2000',
         height: 'variable', //  optionally resize item-height
         visible: {
           min: 1,
@@ -225,7 +223,7 @@ $(document).ready(function() {
       swipe: {
         onMouse: true,
         onTouch: true
-        }
+      }
     });
   }
 
@@ -246,7 +244,7 @@ $(document).ready(function() {
         easing: "easeOutExpo"
       },
       items: {
-            width: '2000',
+        width: '2000',
         height: 'variable', //  optionally resize item-height
         visible: {
           min: 1,
@@ -257,7 +255,7 @@ $(document).ready(function() {
       swipe: {
         onMouse: true,
         onTouch: true
-        }
+      }
     });
   }
 
@@ -285,7 +283,7 @@ $(document).ready(function() {
     responsiveWidth: true
   });
 
-    /*----------------------------------------------------*/
+  /*----------------------------------------------------*/
     // PRELOADER CALLING
     /*----------------------------------------------------*/
     $("body.onepage").queryLoader2({
@@ -295,11 +293,11 @@ $(document).ready(function() {
         barHeight: 3,
         completeAnimation: "fade",
         minimumTime: 200
-    });
+      });
 
 
 
-	/*----------------------------------------------------*/
+    /*----------------------------------------------------*/
 	// PARALLAX CALLING
 	/*----------------------------------------------------*/
 	$(window).bind('load', function () {
@@ -314,9 +312,9 @@ $(document).ready(function() {
       $('.parallax .bg2').addClass("bg-fixed").parallax("50%", 0.5);
       $('.parallax .bg3').addClass("bg-fixed").parallax("50%", 0.5);
       $('.parallax .bg4').addClass("bg-fixed").parallax("50%", 0.5);
-		}
-	}
-	parallaxInit();
+    }
+  }
+  parallaxInit();
 
 
 
@@ -342,8 +340,8 @@ $(document).ready(function() {
           scrollTop: 0 + 'px'
           // scrollTop: $($(this).attr("href")).offset().top + 'px'
         }, {
-            duration: 1200,
-            easing: "easeInOutExpo"
+          duration: 1200,
+          easing: "easeInOutExpo"
         });
       }
       else {
@@ -351,33 +349,33 @@ $(document).ready(function() {
           scrollTop: $($(this).attr("href")).offset().top - headerH + 'px'
           // scrollTop: $($(this).attr("href")).offset().top + 'px'
         }, {
-            duration: 1200,
-            easing: "easeInOutExpo"
+          duration: 1200,
+          easing: "easeInOutExpo"
         });
       }
 
 
 
       event.preventDefault();
-  });
+    });
 
   /*----------------------------------------------------*/
   // Appear
   /*----------------------------------------------------*/
   $('.animated').appear(function() {
     // console.log("111111111111");
-      var elem = $(this);
-      var animation = elem.data('animation');
-      if ( !elem.hasClass('visible') ) {
-        var animationDelay = elem.data('animation-delay');
-        if ( animationDelay ) {
-          setTimeout(function(){
-              elem.addClass( animation + " visible" );
-          }, animationDelay);
-        } else {
+    var elem = $(this);
+    var animation = elem.data('animation');
+    if ( !elem.hasClass('visible') ) {
+      var animationDelay = elem.data('animation-delay');
+      if ( animationDelay ) {
+        setTimeout(function(){
           elem.addClass( animation + " visible" );
-        }
+        }, animationDelay);
+      } else {
+        elem.addClass( animation + " visible" );
       }
+    }
   });
 
   // Animate number
@@ -407,7 +405,7 @@ $(document).ready(function() {
     var $container = o;
 
     $container.isotope({
-        itemSelector: '.element',
+      itemSelector: '.element',
         // layoutMode: 'masonry',
         masonry: {
           columnWidth: '.grid-sizer',
@@ -415,7 +413,7 @@ $(document).ready(function() {
         },
         percentPosition: true,
         transitionDuration: '0.8s'
-    });
+      });
 
     // layout Isotope after each image loads
     $container.imagesLoaded().progress( function() {
@@ -425,7 +423,7 @@ $(document).ready(function() {
     refreshIsotope();
 
     var $optionSets = $('#options .option-set'),
-        $optionLinks = $optionSets.find('a');
+    $optionLinks = $optionSets.find('a');
 
     $optionLinks.click(function(){
       var $this = $(this);
@@ -439,8 +437,8 @@ $(document).ready(function() {
 
       // make option object dynamically, i.e. { filter: '.my-filter-class' }
       var options = {},
-          key = $optionSet.attr('data-option-key'),
-          value = $this.attr('data-option-value');
+      key = $optionSet.attr('data-option-key'),
+      value = $this.attr('data-option-value');
       // parse 'false' as false boolean
       value = value === 'false' ? false : value;
       options[ key ] = value;
@@ -473,12 +471,12 @@ $(window).load(function() {
 
 
 
-    /*----------------------------------------------------*/
+  /*----------------------------------------------------*/
     // LOAD
     /*----------------------------------------------------*/
     //$('#load').fadeOut(2000).remove();
     $("#load").fadeOut( 200, function() {
-        $(this).remove();
+      $(this).remove();
     });
 
 
@@ -486,4 +484,4 @@ $(window).load(function() {
 
 
 
-});
+  });
