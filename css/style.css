@@ -81,6 +81,7 @@ textarea:-ms-input-placeholder {
 .embed-container iframe{
     width: 100%;
 }
+.pagepashome{padding-top: 100px;margin-bottom: 50px;color: #008080;}
 /* ============================= header ====================== */
 .logo{
 	 width:60%;
@@ -380,17 +381,18 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 	height: 591px!important;
 	}
 }
-.hotelhistorique{
+.bandeaudescription{
 	background-color: #1f1c1b;
 	padding: 20px 0;
 	position: absolute; z-index: 1;
 	height: 70px;
 	width: 100%;
 }
-.hotelhistorique h2{
+.bandeaudescription h2{
 	color: white;
 	margin-left: 50px;
 }
+.espacesousbandeau{margin-top: 90px;}
 .search.select1_inner:before,.search.select1_inner:after{
 	background:none;
 	display: none;
