@@ -57,72 +57,68 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<style type="text/css">
-
-  @media (min-width: 500px;){
-    .wizard__labels li{
-  width: 25%;
-}
-}
-
-  @media (max-width: 500px;){
-    .wizard__labels li{
-  width: 100%;
-}
-}
-</style>
 <body  data-spy="scroll" data-target="#top1" data-offset="202">
- <div id="load"></div>
- <div id="main">
-  <div id="top1">
-   <div class="top2_wrapper" id="top2">
-    <div class="container">
-     <div class="top2 clearfix">
-      <header>
-       <div class="logo_wrapper">
-        <a href="index.html" class="logo scroll-to">
-         <img src="img/16443494_10212123291498036_666830644_n.png" alt="Parimis" width="60%" class="img-responsive">
-       </a>
-     </div>
-   </header>
-   <div class="navbar navbar_ navbar-right">
-     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <div class="navbar-collapse navbar-collapse_ collapse navbar-left">
-      <ul class="nav navbar-nav sf-menu clearfix">
-       <li class="sub-menu sub-menu-1"><a href="#home">Hôtel<em class="fa fa-angle-down"></em></a>
-        <ul>
-         <li><a href="#quisommesnous">Qui sommes-nous ?</a></li>
-         <li><a href="#acces">Accès</a></li>
-         <li><a href="#contact">Contact</a></li>
-       </ul>
-     </li>
-     <li><a href="chambres.html">Chambres</a></li>
-     <li><a href="restaurant.html">Restaurant</a></li>
-     <li><a href="spa.html">SPA</a></li>
-     <li><a href="contact.html">contact</a></li>
-     <li><a id="panier" href="panier.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Panier</span></a></li>
-     <li class="sub-menu sub-menu-1"><a href="#langue">Langue<em class="fa fa-angle-down"></em></a>
-       <ul>
-        <li><a href="#fr">FR</a></li>
-        <li><a href="#en">EN</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row pagepashome">
- <div class="col-sm-12 col-md-12 centered">
-  <h1>Votre panier</h1>
-</div>
+  <div id="load"></div>
+  <div id="main">
+    <div id="top1">
+      <div class="top2_wrapper" id="top2">
+        <div class="container">
+          <div class="top2 clearfix">
+            <header>
+              <div class="logo_wrapper">
+                <a href="index.html" class="logo scroll-to">
+                  <img src="img/16443494_10212123291498036_666830644_n.png" alt="Parimis" width="60%" class="img-responsive">
+                </a>
+              </div>
+            </header>
+            <div class="navbar navbar_ navbar-right">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-collapse navbar-collapse_ collapse navbar-left">
+                <ul class="nav navbar-nav sf-menu clearfix">
+                  <li class="sub-menu sub-menu-1"><a href="#home">Hôtel<em class="fa fa-angle-down"></em></a>
+                    <ul>
+                      <li><a href="index.html#quisommesnous">Qui sommes-nous ?</a></li>
+                      <li><a href="index.html#acces">Accès</a></li>
+                      <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="chambres.html">Chambres</a></li>
+                  <li><a href="restaurant.html">Restaurant</a></li>
+                  <li><a href="spa.html">SPA</a></li>
+                  <li><a href="index.html#contact">contact</a></li>
+
+                  <li class="sub-menu sub-menu-1 liste"><a id="panier" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Panier</span><em class="fa fa-angle-down"></em></a>
+                    <ul>
+                      <li><p><span class="fa fa-check"></span> Chambre confort</p></li>
+                      <li><p><span class="fa fa-check"></span> Menu Brasserie</p></li>
+                      <li><p><span class="fa fa-check"></span> Soin Détente</p></li>
+                      <li class="valider"><a href="panier.html">Valider</a></li>
+                    </ul>
+                  </li>
+                </li>
+
+                <li class="sub-menu sub-menu-1"><a href="#langue">Langue<em class="fa fa-angle-down"></em></a>
+                  <ul>
+                    <li><a href="#fr">FR</a></li>
+                    <li><a href="#en">EN</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row pagepashome">
+   <div class="col-sm-12 col-md-12 centered">
+    <h1>Votre panier</h1>
+  </div>
 </div>
 <div class="container">
   <div class="wizard" id="myWizard">
@@ -131,337 +127,337 @@
         <li class="col-xs-12 active">
           <a href="#create-assignment" data-toggle="tab" data-step="1">
             <i class="fa fa-folder-open wizard__icon"></i>Informations personelles</a>
-        </li>
-        <li class="col-xs-12 ">
-          <a href="#associate-info" data-toggle="tab" data-step="2">
-            <i class="fa fa-user wizard__icon"></i>Informations associés</a>
-        </li>
-        <li class="col-xs-12 ">
-          <a href="#working-conditions" data-toggle="tab" data-step="3">
-            <i class="fa fa-file-text-o wizard__icon"></i>Informations profesionnelles</a>
-        </li>
-        <li class="col-xs-12 " id="lastli">
-          <a href="#validate" data-toggle="tab" data-step="4">
-            <i class="fa fa-check wizard__icon"></i> Valider
-          </a>
-        </li>
-      </ul>
-      <div class="progress">
-        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5" style="width: 25%;"> </div>
-      </div>
-    </div>
-    <div class="tab-content">
-      <div class="tab-pane fade in active" id="create-assignment">
-
-        <section>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label class="control-label" for="name--first">Prénom<span class="required">*</span></label>
-                <input type="text" class="form-control input-sm" id="name__first">
-              </div>
+          </li>
+          <li class="col-xs-12 ">
+            <a href="#associate-info" data-toggle="tab" data-step="2">
+              <i class="fa fa-user wizard__icon"></i>Informations associés</a>
+            </li>
+            <li class="col-xs-12 ">
+              <a href="#working-conditions" data-toggle="tab" data-step="3">
+                <i class="fa fa-file-text-o wizard__icon"></i>Informations profesionnelles</a>
+              </li>
+              <li class="col-xs-12 " id="lastli">
+                <a href="#validate" data-toggle="tab" data-step="4">
+                  <i class="fa fa-check wizard__icon"></i> Valider
+                </a>
+              </li>
+            </ul>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5" style="width: 25%;"> </div>
             </div>
-            <!-- / FIN colone -->
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="create-assignment">
 
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label class="control-label" for="name--last">Nom<span class="required">*</span></label>
-                <input type="text" class="form-control input-sm" id="name__last">
-              </div>
+              <section>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="control-label" for="name--first">Prénom<span class="required">*</span></label>
+                      <input type="text" class="form-control input-sm" id="name__first">
+                    </div>
+                  </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="control-label" for="name--last">Nom<span class="required">*</span></label>
+                      <input type="text" class="form-control input-sm" id="name__last">
+                    </div>
+                  </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label class="control-label" for="email-type">Type d'adresse mail</label>
+                      <select class="form-control input-sm" id="email-type">
+                        <option value="">Personnelle</option>
+                        <option value="">Professionnelle</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label class="control-label" for="email">adresse mail</label>
+                      <input type="email" class="form-control input-sm" id="email">
+                    </div>
+                  </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label class="control-label" for="phone-type">Type de téléphone</label>
+                      <select class="form-control input-sm" id="phone-type">
+                        <option value="">Mobile</option>
+                        <option value="">Fix</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label class="control-label" for="phone">Téléphone</label>
+                      <input type="phone" class="form-control input-sm" id="phone">
+                    </div>
+                  </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label class="control-label" for="address-type">Type d'adresse</label>
+                      <select class="form-control input-sm" id="address-type">
+                        <option value="">Personnelle</option>
+                        <option value="">Professionnelle</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- / FIN colone -->
+
+
+                  <div class="col-sm-3">
+                    <!-- ================= Pays ================= -->
+                    <div class="form-group">
+                      <label class="control-label" for="country">Pays</label>
+                      <select class="form-control input-sm" id="country">
+                        <option>France</option>
+                        <option>USA</option>
+                        <option>Grèce</option>
+                        <option>Espagne</option>
+                        <option>Italie</option>
+                        <option>Japon</option>
+                        <option>Allemagne</option>
+                        <option>Angleterre</option>
+                        <option>Côte d'ivoire</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-sm-6">
+                    <!-- ================= Addresse ================= -->
+                    <div class="form-group">
+                      <label class="control-label" for="address">Addresse</label>
+                      <input type="text" class="form-control input-sm" id="address" />
+                    </div>
+
+
+                  </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-xs-12">
+
+                    <div class="collapse space-bottom-lg" id="address--manual1">
+
+                      <div class="row">
+
+                        
+
+                      </div>
+
+                    </div>
+                    <!-- / FIN colonelapse -->
+
+                  </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="control-label" for="dob">Année de naissance</label>
+                      <input type="text" class="js-single-daterange form-control input-sm" id="dob" />
+                    </div>
+                  </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="control-label" for="gender">Civilité</label>
+                      <select class="form-control input-sm" id="gender">
+                        <option value="">Madame</option>
+                        <option value="">Monsieur</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- / FIN colone -->
+
+
+                </div>
+              </section>
+              <section class="text-right">
+                <button type="button" class="btn btn-primary btn-sm next">Etape suivante</button>
+              </section>
+
             </div>
-            <!-- / FIN colone -->
-
-            <div class="col-sm-2">
-              <div class="form-group">
-                <label class="control-label" for="email-type">Type d'adresse mail</label>
-                <select class="form-control input-sm" id="email-type">
-                  <option value="">Personnelle</option>
-                  <option value="">Professionnelle</option>
-                </select>
-              </div>
-            </div>
-            <!-- / FIN colone -->
-
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label class="control-label" for="email">adresse mail</label>
-                <input type="email" class="form-control input-sm" id="email">
-              </div>
-            </div>
-            <!-- / FIN colone -->
-
-            <div class="col-sm-2">
-              <div class="form-group">
-                <label class="control-label" for="phone-type">Type de téléphone</label>
-                <select class="form-control input-sm" id="phone-type">
-                  <option value="">Mobile</option>
-                  <option value="">Fix</option>
-                </select>
-              </div>
-            </div>
-            <!-- / FIN colone -->
-
-            <div class="col-sm-4">
-              <div class="form-group">
-                <label class="control-label" for="phone">Téléphone</label>
-                <input type="phone" class="form-control input-sm" id="phone">
-              </div>
-            </div>
-            <!-- / FIN colone -->
-
-            <div class="col-sm-3">
-              <div class="form-group">
-                <label class="control-label" for="address-type">Type d'adresse</label>
-                <select class="form-control input-sm" id="address-type">
-                  <option value="">Personnelle</option>
-                  <option value="">Professionnelle</option>
-                </select>
-              </div>
-            </div>
-            <!-- / FIN colone -->
-
-
-            <div class="col-sm-3">
-              <!-- ================= Pays ================= -->
-              <div class="form-group">
-                <label class="control-label" for="country">Pays</label>
-                <select class="form-control input-sm" id="country">
-                  <option>France</option>
-                  <option>USA</option>
-                  <option>Grèce</option>
-                  <option>Espagne</option>
-                  <option>Italie</option>
-                  <option>Japon</option>
-                  <option>Allemagne</option>
-                  <option>Angleterre</option>
-                  <option>Côte d'ivoire</option>
-                </select>
-              </div>
-            </div>
-            <!-- / FIN colone -->
-
-            <div class="col-sm-6">
-              <!-- ================= Addresse ================= -->
-              <div class="form-group">
-                <label class="control-label" for="address">Addresse</label>
-                <input type="text" class="form-control input-sm" id="address" />
-              </div>
-
-
-            </div>
-            <!-- / FIN colone -->
-
-            <div class="col-xs-12">
-
-              <div class="collapse space-bottom-lg" id="address--manual1">
+            <div class="tab-pane fade" id="associate-info">
+              <section>
 
                 <div class="row">
 
-                  
 
-                </div>
-
-              </div>
-              <!-- / FIN colonelapse -->
-
-            </div>
-            <!-- / FIN colone -->
-
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label class="control-label" for="dob">Année de naissance</label>
-                <input type="text" class="js-single-daterange form-control input-sm" id="dob" />
-              </div>
-            </div>
-            <!-- / FIN colone -->
-
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label class="control-label" for="gender">Civilité</label>
-                <select class="form-control input-sm" id="gender">
-                  <option value="">Madame</option>
-                  <option value="">Monsieur</option>
-                </select>
-              </div>
-            </div>
-            <!-- / FIN colone -->
-
-
-          </div>
-        </section>
-        <section class="text-right">
-          <button type="button" class="btn btn-primary btn-sm next">Etape suivante</button>
-        </section>
-
-      </div>
-      <div class="tab-pane fade" id="associate-info">
-        <section>
-
-          <div class="row">
-
-
-            <div class="col-sm-3">
-              <!-- ================= Pays ================= -->
-              <div class="form-group">
-                <label class="control-label" for="nid-country">Pays d'enregistrement de la carte</label>
-                <select class="form-control input-sm" id="nid-country">
-                  <option>France</option>
-                  <option>USA</option>
-                  <option>Grèce</option>
-                  <option>Espagne</option>
-                  <option>Italie</option>
-                  <option>Japon</option>
-                  <option>Allemagne</option>
-                  <option>Angleterre</option>
-                  <option>Côte d'ivoire</option>
-                </select>
-              </div>
-            </div>
-            <!-- / FIN colone -->
-
-                <div class="col-sm-3">
-                  <!-- ================= address ================= -->
-                  <div class="form-group">
-                    <label class="control-label" for="nid">Numero de la carte</label>
-                    <input type="text" class="form-control input-sm" id="nid" />
+                  <div class="col-sm-3">
+                    <!-- ================= Pays ================= -->
+                    <div class="form-group">
+                      <label class="control-label" for="nid-country">Pays d'enregistrement de la carte</label>
+                      <select class="form-control input-sm" id="nid-country">
+                        <option>France</option>
+                        <option>USA</option>
+                        <option>Grèce</option>
+                        <option>Espagne</option>
+                        <option>Italie</option>
+                        <option>Japon</option>
+                        <option>Allemagne</option>
+                        <option>Angleterre</option>
+                        <option>Côte d'ivoire</option>
+                      </select>
+                    </div>
                   </div>
+                  <!-- / FIN colone -->
+
+                  <div class="col-sm-3">
+                    <!-- ================= address ================= -->
+                    <div class="form-group">
+                      <label class="control-label" for="nid">Numero de la carte</label>
+                      <input type="text" class="form-control input-sm" id="nid" />
+                    </div>
 
 
-                </div>
+                  </div>
                   <div class="col-sm-1">
-                  <!-- ================= address ================= -->
-                  <div class="form-group">
-                    <label class="control-label" for="nid">Cryptogramme</label>
-                    <input type="text" class="form-control input-sm" id="nid" />
+                    <!-- ================= address ================= -->
+                    <div class="form-group">
+                      <label class="control-label" for="nid">Cryptogramme</label>
+                      <input type="text" class="form-control input-sm" id="nid" />
+                    </div>
                   </div>
+                  
+                  <!-- / FIN colone -->
                 </div>
-          
-                <!-- / FIN colone -->
-          </div>
-             <!-- / FIN ROW -->
-            <div class="row">
+                <!-- / FIN ROW -->
+                <div class="row">
                   <div class="col-sm-4">
                     <div class="checkbox">
-                    <label>
+                      <label>
                         <input type="checkbox"> J'accepte <a href="cgv.html">les CGV du Parimis hôtel</a>
-                    </label>
+                      </label>
                     </div>
 
-                    </div>
-                <!-- / FIN colone -->
+                  </div>
+                  <!-- / FIN colone -->
                 </div>
 
-             <!-- / FIN ROW -->
-         
+                <!-- / FIN ROW -->
+                
 
 
-        </section>
-        <section class="text-right">
-         <button type="button" class="btn btn-primary btn-sm next">Etape suivante</button>
-        </section>
-      </div>
-      <div class="tab-pane fade" id="working-conditions">
-        <section>
-          <div class="row">
-            
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label class="control-label" for="start-date">Nom de l'entreprise</label>
-                <input type="text" class="js-single-daterange form-control input-sm" id="start-date" />
+              </section>
+              <section class="text-right">
+               <button type="button" class="btn btn-primary btn-sm next">Etape suivante</button>
+             </section>
+           </div>
+           <div class="tab-pane fade" id="working-conditions">
+            <section>
+              <div class="row">
+                
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="control-label" for="start-date">Nom de l'entreprise</label>
+                    <input type="text" class="js-single-daterange form-control input-sm" id="start-date" />
+                  </div>
+                </div>
+                <!-- / FIN colone -->
+                <div class="col-sm-3">
+                  <!-- ================= Pays ================= -->
+                  <div class="form-group">
+                    <label class="control-label" for="nid-country">Pays de l'entreprise</label>
+                    <select class="form-control input-sm" id="nid-country">
+                      <option>France</option>
+                      <option>USA</option>
+                      <option>Grèce</option>
+                      <option>Espagne</option>
+                      <option>Italie</option>
+                      <option>Japon</option>
+                      <option>Allemagne</option>
+                      <option>Angleterre</option>
+                      <option>Côte d'ivoire</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- / FIN colone -->    
+                
               </div>
-            </div>
-            <!-- / FIN colone -->
-                          <div class="col-sm-3">
-              <!-- ================= Pays ================= -->
-              <div class="form-group">
-                <label class="control-label" for="nid-country">Pays de l'entreprise</label>
-                <select class="form-control input-sm" id="nid-country">
-                  <option>France</option>
-                  <option>USA</option>
-                  <option>Grèce</option>
-                  <option>Espagne</option>
-                  <option>Italie</option>
-                  <option>Japon</option>
-                  <option>Allemagne</option>
-                  <option>Angleterre</option>
-                  <option>Côte d'ivoire</option>
-                </select>
+            </section>
+            <section class="text-right">
+              <button type="button" class="btn btn-primary btn-sm next" id="last">Enregister</button>
+            </section>
+          </div>
+          <div class="tab-pane fade" id="validate">
+            <section>
+              <div class="alerts--child alerts--success">
+                <div class="alerts__icon">
+                  <i class="fa fa-check"></i>
+                </div>
+                <div class="alerts__text">
+                  <span class="alerts__type">Bravo : </span>Votre réservation est prise en compte vous recevrez prochainement un mail de confirmation
+                </div>
+
               </div>
-            </div>
-          <!-- / FIN colone -->    
-           
-          </div>
-        </section>
-        <section class="text-right">
-          <button type="button" class="btn btn-primary btn-sm next" id="last">Enregister</button>
-        </section>
-      </div>
-      <div class="tab-pane fade" id="validate">
-        <section>
-          <div class="alerts--child alerts--success">
-            <div class="alerts__icon">
-              <i class="fa fa-check"></i>
-            </div>
-            <div class="alerts__text">
-              <span class="alerts__type">Bravo : </span>Votre réservation est prise en compte vous recevrez prochainement un mail de confirmation
-            </div>
+            </section>
 
           </div>
-        </section>
-
+        </div>
       </div>
     </div>
-  </div>
-</div>
- <footer>
-  <div id="footer">
-   <div class="container">
-    <div class="row">
+    <footer>
+      <div id="footer">
+       <div class="container">
+        <div class="row">
+         <div class="col-sm-4">
+          <div class="foot-header">
+           Newsletter :
+         </div>
+         <form id="search_form" class="col-md-6 navbar-form navbar-left navbar-input-group" action="#" method="POST">
+           <div class="input-group">
+            <div class="form-group">
+             <input name="email" type="email" value="" placeholder="Adresse mail" required>
+           </div>
+           <span class="input-group-btn">
+             <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
+           </span>
+         </div>
+       </form>
+     </div>
      <div class="col-sm-4">
       <div class="foot-header">
-       Newsletter :
+       Évènement :
      </div>
-     <form id="search_form" class="col-md-6 navbar-form navbar-left navbar-input-group" action="#" method="POST">
-       <div class="input-group">
-        <div class="form-group">
-         <input name="email" type="email" value="" placeholder="Adresse mail" required>
-       </div>
-       <span class="input-group-btn">
-         <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
-       </span>
-     </div>
-   </form>
- </div>
- <div class="col-sm-4">
-  <div class="foot-header">
-   Évènement :
- </div>
- <div class="foot-links">
-   <ul>
-    <li><a href="actualites.html">Actualités</a></li>
-    <li><a href="evenements.html">Évènements, soirées spéciales</a></li>
-  </ul>
-</div>
-</div>
-<div class="col-sm-4">
-  <div class="foot-header">
-   Plus d'informations :
- </div>
- <div class="foot-links">
-   <ul>
-    <li><a href="presse.html">Espace presse</a></li>
-    <li><a href="recrutement.html">Recrutement</a></li>
-    <li><a href="plandusite.html">Plan du site</a></li>
-  </ul>
-</div>
+     <div class="foot-links">
+       <ul>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="evenements.html">Évènements, soirées spéciales</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="foot-header">
+     Plus d'informations :
+   </div>
+   <div class="foot-links">
+     <ul>
+      <li><a href="presse.html">Espace presse</a></li>
+      <li><a href="recrutement.html">Recrutement</a></li>
+      <li><a href="plandusite.html">Plan du site</a></li>
+    </ul>
+  </div>
 </div>
 </div>
 </div>
 </div>
 <div id="lastfooter">
   <div class="container">
-   <p class="centered"> IESA Multimédia | <a href="#" target="_blank">Mentions légales</a> | <a href="#" target="_blank">Conditions générales de Ventes</a> | <a href="#" onclick="imprimer_page()" target="_blank">Imprimer la page</a></p>
- </div>
+    <p class="centered"> IESA Multimédia | <a href="mentionslegales.html">Mentions légales</a> | <a href="cgv.html">Conditions générales de Ventes</a> | <a href="#" onclick="imprimer_page()" target="_blank">Imprimer la page</a></p>
+  </div>
 </div>
 </footer>
 <script>
@@ -471,10 +467,10 @@
 $( "#enter-id" ).slideUp();
 //Single date range pickers
 $(function() {
-    $('.js-single-daterange').daterangepicker({
-        singleDatePicker: true,
-        showDropdowns: true
-    });
+  $('.js-single-daterange').daterangepicker({
+    singleDatePicker: true,
+    showDropdowns: true
+  });
 });
 $( "#submit-id-button" ).click(function() {
   $( this ).hide();
@@ -488,12 +484,12 @@ $( "#submit-id-button" ).click(function() {
   
 });
 $('.next').click(function(){
-    var nextId = $(this).parents('.tab-pane').next().attr("id");
-    $('[href=#'+nextId+']').tab('show');
-    return false;
-  })
+  var nextId = $(this).parents('.tab-pane').next().attr("id");
+  $('[href=#'+nextId+']').tab('show');
+  return false;
+})
 
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     //update progress
     var step = $(e.target).data('step');
     var percent = (parseInt(step) / 4) * 100;
@@ -503,14 +499,14 @@ $('.next').click(function(){
     e.relatedTarget // previous tab
   })
 
-  $('.first').click(function(){
-    $('#myWizard a:first').tab('show')
-  })
-  
-  
-  $('#last').click(function(){
-    $('#lastli').addClass('success');
-  });
+$('.first').click(function(){
+  $('#myWizard a:first').tab('show')
+})
+
+
+$('#last').click(function(){
+  $('#lastli').addClass('success');
+});
 </script>
 <script src="js/bootstrap.min.js"></script>
 </body>

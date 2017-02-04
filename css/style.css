@@ -2,9 +2,7 @@
 Jordan Peluard et n'oublions pas niko ^^ - Creators
 */
 
-
 /* GOOGLE FONTS */
-
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
@@ -157,7 +155,17 @@ textarea:-ms-input-placeholder {
 
 
 /* ============================= header ====================== */
-
+.liste li{
+    text-align: center;
+}
+.liste li p{
+    padding: 2px 10px!important;
+}
+li.valider a{
+    background-color: #008080!important;
+    color: white!important;
+    padding: 2px 10px!important;
+}
 .logo {
    width: 60%;
 }
@@ -9318,7 +9326,17 @@ button:hover {
    flex-direction: row;
    justify-content: space-between;
 }
+  @media (min-width: 500px;){
+    .wizard__labels li{
+  width: 25%;
+}
+}
 
+  @media (max-width: 500px;){
+    .wizard__labels li{
+  width: 100%;
+}
+}
 @media (max-width: 500px) {
    .wizard__progress {
       padding: 0px 22px 22px 22px;
@@ -14518,7 +14536,7 @@ button:focus {
 }
 
 .btn-form1-submit {
-   border: none;
+   border: 1px solid #008080;
    font-family: 'Roboto Condensed', sans-serif!important;
    font-size: 14px!important;
    font-weight: bold;
@@ -14535,7 +14553,7 @@ button:focus {
 .btn-form1-submit:hover {
    background: white;
    color: #008080;
-   border: 1px solid #008080;
+   border: #008080 solid 1px;
 }
 
 .btn-form1-submit:focus {
@@ -14723,6 +14741,7 @@ footer .input-group-btn:last-child > .btn {
    background-color: #008080;
    border: #008080;
    border-radius: 0px;
+   color: white;
 }
 
 footer .input-group-btn:last-child > .btn:hover {
@@ -15052,15 +15071,24 @@ footer input {
    background: #008080;
 }
 
-.sub-menu-1 > ul {}
-
 .sub-menu-2 > ul {
    left: 100%;
    margin-left: 1px;
    background: #fff;
 }
-
-
+/* ============================= Recrutement ====================== */
+.recrutement textarea{
+    height: 168px;
+    border-radius: 0px;
+    border: #008080 solid 1px;
+}
+.recrutement input{
+    border-radius: 0px;
+    border: #008080 solid 1px;
+}
+  .recrutement button{
+    margin-bottom: 73px;
+}
 /* ============================= search-form ====================== */
 
 .search-form-wrapper {
