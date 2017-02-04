@@ -145,54 +145,74 @@
             $('.maps iframe').css("pointer-events", "none"); 
           });
         </script>
-        <div id="parallax1" class="parallax">
-          <div class="bg1 parallax-bg"></div>
-          <div class="overlay"></div>
-          <div class="parallax-content">
-            <div class="container">
-              <div class="backcontact col-sm-12 col-md-12">
-                <form method="POST" id="contact" action="#">
-                  <div class="col-sm-8 col-md-8">
-                    <div class="col-sm-4 col-md-4">
-                      <div class="form-group">
-                        <input type="text" class="form-control" name="nom" placeholder="Nom" value="" required>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                      <div class="form-group">
-                        <input type="text" class="form-control" name="prenom" placeholder="Prénom" value="" required>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                      <div class="form-group">
-                        <input type="email" class="form-control" name="adressemail" placeholder="Adresse mail" value="" required>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12">
-                      <div class="form-group">
-                        <textarea class="form-control" name="message" placeholder="Votre message.." required></textarea>
-                      </div>
+      <div id="parallax1" class="parallax">
+        <div class="bg1 parallax-bg"></div>
+        <div class="overlay"></div>
+        <div class="parallax-content">
+          <div class="container">
+            <div class="backcontact col-sm-12 col-md-12">
+              <form method="POST" id="contact" action="#">
+                <div class="col-sm-8 col-md-8">
+                  <div class="col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="nom" placeholder="Nom" value="" required>
                     </div>
                   </div>
-                  <div class="col-sm-4 col-md-4 contacttext">
-                    <h1>Contact</h1>
-                    <p>Lorem ipsum dolor sit amet,
-                      consectetuer adipiscing elit, sed
-                      diam nonummy nibh euismod tincidunt
-                      ut laoreet dolore magna aliquam
-                      erat volutpat. Ut wisi enim ad
-                      minim veniam, quis nostrud exerci
-                      tation ullamcorper suscipit lobortis
-                    </p>
-                    <button type="submit" name="submit" class="btn btn-default">Envoyer</button>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="prenom" placeholder="Prénom" value="" required>
+                    </div>
                   </div>
-                </form>
-              </div>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="entreprise" placeholder="Entreprise" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" placeholder="Email" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="pays" placeholder="Pays" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <select class="select2 select" style="width: 100%" tabindex="-1" aria-hidden="true">
+                          <option value="chambre">chambre</option>
+                          <option value="restaurant">restaurant</option>
+                          <option value="spa">spa</option>
+                          <option value="ordregeneral">Ordre général</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" placeholder="Votre message.." required></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-4 contacttext">
+                  <h1>Contact</h1>
+                  <p>Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed
+                    diam nonummy nibh euismod tincidunt
+                    ut laoreet dolore magna aliquam
+                    erat volutpat. Ut wisi enim ad
+                    minim veniam, quis nostrud exerci
+                    tation ullamcorper suscipit lobortis
+                  </p>
+                  <button type="submit" name="submit" class="btn btn-default">Envoi</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   <footer>
     <div id="footer">
       <div class="container">
