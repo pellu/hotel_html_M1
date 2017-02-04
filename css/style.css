@@ -1,5 +1,5 @@
 /*
-Jordan Peluard - Creator
+Jordan Peluard et n'oublions pas niko ^^ - Creators
 */
 
 /* GOOGLE FONTS */
@@ -12763,4 +12763,15 @@ h3{display: block; font-family:'Roboto Condensed',sans-serif; font-weight:700; f
   .tour1{width: 50%;}
   .tours_content_top .left{float: none;}
   .tours_content_top .right{float: none; padding-top: 15px;}
+}
+
+.lefty
+{
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.rightH2
+{
+    text-indent: 65%;
 }
