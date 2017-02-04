@@ -255,44 +255,75 @@ header {
    z-index: 50;
 }
 
-
 /* ============================= avis ====================== */
-
+.pageavis .avis{
+    padding-top: 9px;
+    margin-top: 0;
+}
+#carousel-reviews1,#carousel-reviews2,#carousel-reviews3,#carousel-reviews4{
+   height: 450px;
+}
+.pageavis .nav-tabs > li, .pageavis .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline;
+     zoom:1;
+}
+.pageavis .nav-tabs, .nav-pills {
+    text-align:center;
+}
+.pageavis .nav-tabs{
+    background-color: #1f1c1b;
+}
+.pageavis .nav-tabs > li.active > a, .pageavis .nav-tabs > li.active > a:hover, .pageavis .nav-tabs > li.active > a:focus, .pageavis .nav-tabs > li > a:hover{
+    background-color: transparent!important;
+    color: #008080!important;
+    border-bottom: 3px solid #008080!important;
+}
+.pageavis .nav-tabs > li > a{
+    background-color: transparent;
+    color: white;
+}
+.pageavis h2{
+   margin-top: 20px;
+   color: white;
+   text-align: center;
+}
+select.selectavis {
+    background-color: white;
+    padding: 8px 10px 8px 3px;
+    margin-left: -14px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
 @media (max-width: 767px) {
    .avis {
       display: none;
       overflow: hidden;
    }
 }
-
 .avis .carousel-control.left,
 .avis .carousel-control.right {
    background: none;
    width: 25px;
 }
-
 .avis .carousel-control.left {
    left: -25px;
 }
-
 .avis .carousel-control.right {
    right: -25px;
 }
-
 .avis .broun-block {
    background: url("http://myinstantcms.ru/images/bg-broun1.jpg") repeat scroll center top rgba(0, 0, 0, 0);
    padding-bottom: 34px;
 }
-
 .avis {
    background-color: #2d2928;
    margin-top: 70px;
 }
-
 #carousel-reviews {
    height: 462px;
 }
-
 .avis .block-text {
    background-color: #fff;
    border-radius: 5px;
@@ -13218,7 +13249,20 @@ button:focus {
 
 
 /* ============================= say end ====================== */
-
+a.btn-default.btn7.readmore{
+  background-color: white;
+  color: #1f1c1b;
+  padding: 4px;
+  cursor: pointer;
+}
+a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
+  background-color: #008080;
+  color: white;
+  text-decoration:none;
+}
+.post-story a{
+  cursor: pointer;
+}
 #about {
    position: relative;
    padding-top: 60px;
@@ -13364,8 +13408,6 @@ button:focus {
    text-transform: uppercase;
 }
 
-.pager li {}
-
 .pager li > a {
    border: none;
    padding: 0px 2px;
@@ -13390,8 +13432,6 @@ button:focus {
    text-decoration: none;
 }
 
-.pager .prev {}
-
 .pager .prev > a {
    float: left;
    background: #008080;
@@ -13403,8 +13443,6 @@ button:focus {
 .pager .prev > a:hover {
    background: #008080;
 }
-
-.pager .next {}
 
 .pager .next > a {
    float: right;
@@ -13433,8 +13471,6 @@ button:focus {
    font-size: 12px;
    text-transform: uppercase;
 }
-
-.pager2_wrapper .pager li {}
 
 .pager2_wrapper .pager li > a {
    border: none;

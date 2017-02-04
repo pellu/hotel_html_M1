@@ -38,18 +38,6 @@
  <script src="js/jquery.isotope.min.js"></script>
  <script src="js/cform.js"></script>
  <script src="js/scripts.js"></script>
- <script>
-    //Activer le hover dropdown
-    $(document).ready(function() {
-      $('.js-activated').dropdownHover().dropdown();
-    });
-    //Activer rotate burger
-    $(document).ready(function () {
-      $(".navbar-toggle").on("click", function () {
-       $(this).toggleClass("active");
-     });
-    });
-  </script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -92,7 +80,7 @@
                   <li><a href="spa.html">SPA</a></li>
                   <li><a href="index.html#contact">contact</a></li>
 
-                  <li class="sub-menu sub-menu-1 liste"><a id="panier" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Panier</span><em class="fa fa-angle-down"></em></a>
+                  <li class="sub-menu sub-menu-1 liste active"><a id="panier" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Panier</span><em class="fa fa-angle-down"></em></a>
                     <ul>
                       <li><p><span class="fa fa-check"></span> Chambre confort</p></li>
                       <li><p><span class="fa fa-check"></span> Menu Brasserie</p></li>
@@ -436,6 +424,7 @@
        <ul>
         <li><a href="actualites.html">Actualités</a></li>
         <li><a href="evenements.html">Évènements, soirées spéciales</a></li>
+        <li><a href="avis.html">Vos avis</a></li>
       </ul>
     </div>
   </div>
