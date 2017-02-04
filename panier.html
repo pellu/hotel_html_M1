@@ -57,7 +57,20 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
+<style type="text/css">
 
+  @media (min-width: 500px;){
+    .wizard__labels li{
+  width: 25%;
+}
+}
+
+  @media (max-width: 500px;){
+    .wizard__labels li{
+  width: 100%;
+}
+}
+</style>
 <body  data-spy="scroll" data-target="#top1" data-offset="202">
  <div id="load"></div>
  <div id="main">
@@ -115,19 +128,19 @@
   <div class="wizard" id="myWizard">
     <div class="wizard__progress">
       <ul class="wizard__labels nav nav-tabs">
-        <li style="width:25%;" class="col-xs-12 active">
+        <li class="col-xs-12 active">
           <a href="#create-assignment" data-toggle="tab" data-step="1">
             <i class="fa fa-folder-open wizard__icon"></i>Informations personelles</a>
         </li>
-        <li style="width:25%;" class="col-xs-12 ">
+        <li class="col-xs-12 ">
           <a href="#associate-info" data-toggle="tab" data-step="2">
             <i class="fa fa-user wizard__icon"></i>Informations associés</a>
         </li>
-        <li style="width:25%;" class="col-xs-12 ">
+        <li class="col-xs-12 ">
           <a href="#working-conditions" data-toggle="tab" data-step="3">
             <i class="fa fa-file-text-o wizard__icon"></i>Informations profesionnelles</a>
         </li>
-        <li style="width:25%;" class="col-xs-12 " id="lastli">
+        <li class="col-xs-12 " id="lastli">
           <a href="#validate" data-toggle="tab" data-step="4">
             <i class="fa fa-check wizard__icon"></i> Valider
           </a>
