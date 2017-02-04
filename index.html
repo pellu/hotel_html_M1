@@ -11,9 +11,6 @@
   <link href="css/jquery-ui.css" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/font-awesome.css" rel="stylesheet">
-  <link href="css/prettyPhoto.css" rel="stylesheet">
-  <link href="css/isotope.css" rel="stylesheet">
-  <link href="css/animate.css" rel="stylesheet">
   <link href="css/select2.css" rel="stylesheet">
   <link href="css/smoothness/jquery-ui-1.10.0.custom.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -21,9 +18,6 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/jquery-ui.js"></script>
-  <script src="js/jquery-migrate-1.2.1.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/superfish.js"></script>
   <script src="js/select2.js"></script>
   <script src="js/jquery.sticky.js"></script>
   <script src="js/jquery.queryloader2.js"></script>
@@ -33,22 +27,127 @@
   <script src="js/jquery.caroufredsel.js"></script>
   <script src="js/jquery.touchSwipe.min.js"></script>
   <script src="js/jquery.parallax-1.1.3.resize.js"></script>
-  <script src="js/SmoothScroll.js"></script>
   <script src="js/jquery.prettyPhoto.js"></script>
   <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/cform.js"></script>
   <script src="js/scripts.js"></script>
-  <script>
-    //Activer le hover dropdown
-    $(document).ready(function() {
-      $('.js-activated').dropdownHover().dropdown();
-    });
-    //Activer rotate burger
-    $(document).ready(function () {
-      $(".navbar-toggle").on("click", function () {
-        $(this).toggleClass("active");
+  <script type="text/javascript">
+    $( function() {
+      $.datepicker.setDefaults($.datepicker.regional['fr']);
+      var dateFormat = "dd/mm/yy",
+       from = $( "#jourrestaurant" )
+      .datepicker({
+        defaultDate: "+1w",
+        minDate: 0,
+        changeMonth: true,
+        showWeek: true,
+        numberOfMonths: 3,
+        closeText: "Fermer",
+        prevText: "Précédent",
+        nextText: "Suivant",
+        currentText: "Aujourd\'hui",
+        monthNames: [ "Janvier", "Février", "Mars", "Avril", "Mai", "Juin","Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre" ],
+        monthNamesShort: [ "janv.", "févr.", "mars", "avr.", "mai", "juin","juil.", "août", "sept.", "oct.", "nov.", "déc." ],
+        dayNames: [ "dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi" ],
+        dayNamesShort: [ "dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam." ],
+        dayNamesMin: [ "D","L","M","M","J","V","S" ],
+        weekHeader: "Sem.",
+        dateFormat: "dd/mm/yy",
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: true,
+        yearSuffix: ""
+      })
+      .on( "change", function() {
+        to.datepicker( "option", "minDate", getDate( this ) );
+      }),
+      from = $( "#jourspa" )
+      .datepicker({
+        defaultDate: "+1w",
+        minDate: 0,
+        changeMonth: true,
+        showWeek: true,
+        numberOfMonths: 3,
+        closeText: "Fermer",
+        prevText: "Précédent",
+        nextText: "Suivant",
+        currentText: "Aujourd\'hui",
+        monthNames: [ "Janvier", "Février", "Mars", "Avril", "Mai", "Juin","Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre" ],
+        monthNamesShort: [ "janv.", "févr.", "mars", "avr.", "mai", "juin","juil.", "août", "sept.", "oct.", "nov.", "déc." ],
+        dayNames: [ "dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi" ],
+        dayNamesShort: [ "dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam." ],
+        dayNamesMin: [ "D","L","M","M","J","V","S" ],
+        weekHeader: "Sem.",
+        dateFormat: "dd/mm/yy",
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: true,
+        yearSuffix: ""
+      })
+      .on( "change", function() {
+        to.datepicker( "option", "minDate", getDate( this ) );
+      }),
+      from = $( "#from" )
+      .datepicker({
+        defaultDate: "+1w",
+        minDate: 0,
+        changeMonth: true,
+        showWeek: true,
+        numberOfMonths: 3,
+        closeText: "Fermer",
+        prevText: "Précédent",
+        nextText: "Suivant",
+        currentText: "Aujourd\'hui",
+        monthNames: [ "Janvier", "Février", "Mars", "Avril", "Mai", "Juin","Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre" ],
+        monthNamesShort: [ "janv.", "févr.", "mars", "avr.", "mai", "juin","juil.", "août", "sept.", "oct.", "nov.", "déc." ],
+        dayNames: [ "dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi" ],
+        dayNamesShort: [ "dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam." ],
+        dayNamesMin: [ "D","L","M","M","J","V","S" ],
+        weekHeader: "Sem.",
+        dateFormat: "dd/mm/yy",
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: true,
+        yearSuffix: ""
+      })
+      .on( "change", function() {
+        to.datepicker( "option", "minDate", getDate( this ) );
+      }),
+      to = $( "#to" ).datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        showWeek: true,
+        numberOfMonths: 3,
+        closeText: "Fermer",
+        prevText: "Précédent",
+        nextText: "Suivant",
+        currentText: "Aujourd\'hui",
+        monthNames: [ "Janvier", "Février", "Mars", "Avril", "Mai", "Juin","Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre" ],
+        monthNamesShort: [ "janv.", "févr.", "mars", "avr.", "mai", "juin","juil.", "août", "sept.", "oct.", "nov.", "déc." ],
+        dayNames: [ "dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi" ],
+        dayNamesShort: [ "dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam." ],
+        dayNamesMin: [ "D","L","M","M","J","V","S" ],
+        weekHeader: "Sem.",
+        dateFormat: "dd/mm/yy",
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: true,
+        yearSuffix: ""
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
       });
-    });
+
+      function getDate( element ) {
+        var date;
+        try {
+          date = $.datepicker.parseDate( dateFormat, element.value );
+        } catch( error ) {
+          date = null;
+        }
+
+        return date;
+      }
+    } );
   </script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,7 +156,6 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-
 <body  data-spy="scroll" data-target="#top1" data-offset="202">
   <div id="load"></div>
   <div id="main">
@@ -153,297 +251,324 @@
                       <div class="input1_wrapper">
                         <label>Arrivée</label>
                         <div class="input1_inner">
-                          <input type="text" class="input datepicker" value="Mm/Dd/Yy">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                      <div class="input1_wrapper">
-                        <label>Départ</label>
-                        <div class="input1_inner">
-                          <input type="text" class="input datepicker" value="Mm/Dd/Yy">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-1 col-md-1">
-                      <div class="select1_wrapper">
-                        <label>Personnes</label>
-                        <div class="select1_inner">
-                          <select class="select2 select" style="width: 100%">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="8">9</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                      <div class="button1_wrapper">
-                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-shopping-cart"></i>Réserver</button>
+                         <input type='text' class="form-control" id='from' title="Date d'arrivée'" maxlength="10" name="datedarrivee" placeholder="Date d'arrivée" value=""/>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="col-sm-3 col-md-3">
+                    <div class="input1_wrapper">
+                      <label>Départ</label>
+                      <div class="input1_inner">
+                        <input type='text' class="form-control" id='to' title="Date de départ" maxlength="10" name="datededepart" placeholder="Date de départ" value=""/>
                       </div>
                     </div>
                   </div>
-                </form>
-              </div>
-              <div id="tabs-2">
-                <form action="#" class="form1">
-                  <div class="row">
-                    <div class="col-sm-3 col-md-3">
-                      <div class="input1_wrapper">
-                        <label>Date</label>
-                        <div class="input1_inner">
-                          <input type="text" class="input datepicker" value="Mm/Dd/Yy">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                      <div class="select1_wrapper">
-                        <label>Heure</label>
-                        <div class="select1_inner">
-                          Ajout champs heure
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                      <div class="input1_wrapper">
-                        <label>Nombre de personnes</label>
-                        <div class="select1_inner select2_inner">
-                          <select class="select2 select select3" style="width: 100%">
-                            <option value="1">01</option>
-                            <option value="2">02</option>
-                            <option value="3">03</option>
-                            <option value="4">04</option>
-                            <option value="5">05</option>
-                            <option value="6">06</option>
-                            <option value="7">07</option>
-                            <option value="8">08</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                      <div class="button1_wrapper">
-                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-shopping-cart"></i>Réserver</button>
+                  <div class="col-sm-1 col-md-1">
+                    <div class="select1_wrapper">
+                      <label>Personnes</label>
+                      <div class="select1_inner">
+                        <select class="select2 select" style="width: 100%">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="8">9</option>
+                        </select>
                       </div>
                     </div>
                   </div>
-                </form>
-              </div>
-              <div id="tabs-3">
-                <form action="#" class="form1">
-                  <div class="row">
-                    <div class="col-sm-3 col-md-3">
-                      <div class="input1_wrapper">
-                        <label>Date</label>
-                        <div class="input1_inner">
-                          <input type="text" class="input datepicker" value="Mm/Dd/Yy">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                      <div class="select1_wrapper">
-                        <label>Heure</label>
-                        <div class="select1_inner">
-                          Ajout champs heure
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                      <div class="input1_wrapper">
-                        <label>Type de soins</label>
-                        <div class="select1_inner select2_inner">
-                          <select class="select2 select select3" style="width: 100%">
-                            <option value="1">Détente</option>
-                            <option value="2">Découverte</option>
-                            <option value="3">Relaxant</option>
-                            <option value="4">Plaisir</option>
-                            <option value="5">Evasion</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                      <div class="button1_wrapper">
-                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-shopping-cart"></i>Réserver</button>
-                      </div>
+                  <div class="col-sm-3 col-md-3">
+                    <div class="button1_wrapper">
+                      <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-shopping-cart"></i>Réserver</button>
                     </div>
                   </div>
-                </form>
-              </div>
-              <div id="tabs-4">
-                <form action="#" class="form1">
-                  <div class="row">
-                    <div class="col-sm-9 col-md-9">
-                      <div class="select1_wrapper">
-                        <label>Recherche</label>
-                        <div class="select1_inner search">
-                          <input type="text" placeholder="Votre recherche" name="recherche" required>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 col-md-3">
-                      <div class="button1_wrapper">
-                        <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-search"></i>Recherche</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div class="bandeaudescription">
-        <h2>Un hôtel historique</h2>
-      </div>
-    <div class="row  divwhite">
-      <div class="col-sm-8 col-md-8 divwhite">
-        <img width="100%" src="img/16491428_10212123970435009_1605810203_o.jpg" alt="hôtel parimis">
-      </div>
-      <div class="col-sm-4 col-md-4 divwhite presentationhotelhome">
-        <p>L'hôtel Parimis, réputé mondialement pour son service de qualité se situe avenue Montaigne, une des avenues les plus connus de Paris. Découvrez des services de qualités notamment un spa, un restaurant gastronomique et des chambres et suites luxueuse.</p><p>Découvrez notre offre exclusive, valable du 1er au 27 février 2017.
-Pour un séjour de une à deux nuits, le surclassement est garanti lors de votre réservation, une bouteille de Champagne vous attend en chambre et le petit-déjeuner est offert. Pour un séjour de trois nuits, notre chauffeur vous attend à l’aéroport. C'est là que tout commence. Vivre une expérience unique.</p><p>Étroitement liée à la vie mondaine et culturelle de Paris, la renommée du Parimis Paris se prolonge par son savoir-faire inimitable pour vous rendre la vie douce et légère. Haute Cuisine avec le Chef Nicolas Sale, cocktails sur-mesure au Bar Hemingway ou encore mise en beauté éclatante au sein du très exclusif espace dédié à l'art du soin CHANEL, votre séjour au Ritz Paris est marqué du sceau de l'exception.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 col-md-4 presentationhotelhome">
-        <p>Découvrez un personnel qualifié et formé pour répondre à vos désirs. Retrouvez le luxe à la française au sein de notre hôtel ayant gagner plusieurs prix dont le golden hospitality reward et le gouvernent Awards.</p><p>Séjour favori des grands de ce monde, le Parimis Paris restitue fidèlement à travers ses Suites de Prestige les univers uniques de ses hôtes célèbres. Marcel Proust, Frédéric Chopin, Coco Chanel ou le duc et la duchesse de Windsor, à chacune de ces figures répond un mobilier choisi, une décoration d’une absolue sophistication et la quiétude d’une vue imprenable sur la place Vendôme.</p><p>La Galerie du Parimis Paris est un endroit privilégié au cœur de la vie de l’hôtel. Véritable trésor architectural, baignée de la lumière du jour, elle fait face au Grand Jardin. Offrant le passage d’une aile à l’autre de l’hôtel, de la très renommée place Vendôme à la très convoitée rue Cambon, la nouvelle Galerie du Ritz Paris rassemble désormais 5 boutiques exclusives - Tasaki, Reza, Maison Ullens, Colombo Via della Spiga, Heroes - et 95 vitrines. Le Concept Store ou 'Oeil du Parimis' est un cabinet de curiosités dédié aux essentiels du voyage et aux indispensables d’un séjour parisien et accueillant The Webster jusqu’à la fin de l’année.</p>
-      </div>
-      <div class="col-sm-8 col-md-8">
-        <img width="100%" src="img/16491428_10212123970435009_1605810203_o.jpg" alt="hôtel parimis">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6 col-md-6 descriptionhotelhome">
-        <h1>Le Parimis</h1>
-        <p>L'hôtel Parimis est, sans conteste, l'un des plus beaux hôtels de Paris. Il est désormais l'un des 16 Palaces de France et figure au palmarès du Leading Hôtels of the World.L'hôtel Parimis 5 étoiles entièrement rénové, est l'emblème de la tradition hôtelière parisienne. Situé au coeur de Paris, dispense des prestations de haute qualité et propose un service 5 étoiles pour sa clientèle.Que vous soyez de passage pour un rendez-vous d'affaire, ou que vous souhaitiez passer des vacances luxueuses, réservez votre chambre ou suite à l'hôtel Parimis directement en ligne. Nos prestations sont à la hauteur de vos exigences.
-          Nos services de luxe
-          L'accueil personnalisé représente un point clé du service de l'hôtel Parimis. Nos chambres proposent des prestations adaptées à vos besoins et suivant vos envies. Les soins dispensés au spa sont à la carte. Les menus de notre restaurant également.</p>
-        </div>
-        <div class="col-sm-6 col-md-6">
-          <div class='embed-container maps'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10498.563491877268!2d2.3019885!3d48.8650582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x533b1319048c8ee2!2sH%C3%B4tel+Parimis!5e0!3m2!1sen!2sfr!4v1485948685680" height="450" style="border:0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <script>
-          $('.maps').click(function () {
-            $('.maps iframe').css("pointer-events", "auto");
-          });
-          $( ".maps" ).mouseleave(function() {
-            $('.maps iframe').css("pointer-events", "none"); 
-          });
-        </script>
-        <div id="parallax1" class="parallax">
-          <div class="bg1 parallax-bg"></div>
-          <div class="overlay"></div>
-          <div class="parallax-content">
-            <div class="container">
-              <div class="backcontact col-sm-12 col-md-12">
-                <form method="POST" id="contact" action="#">
-                  <div class="col-sm-8 col-md-8">
-                    <div class="col-sm-4 col-md-4">
-                      <div class="form-group">
-                        <input type="text" class="form-control" name="nom" placeholder="Nom" value="" required>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                      <div class="form-group">
-                        <input type="text" class="form-control" name="prenom" placeholder="Prénom" value="" required>
-                      </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                      <div class="form-group">
-                        <input type="email" class="form-control" name="adressemail" placeholder="Adresse mail" value="" required>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12">
-                      <div class="form-group">
-                        <textarea class="form-control" name="message" placeholder="Votre message.." required></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4 col-md-4 contacttext">
-                    <h1>Contact</h1>
-                    <p>Lorem ipsum dolor sit amet,
-                      consectetuer adipiscing elit, sed
-                      diam nonummy nibh euismod tincidunt
-                      ut laoreet dolore magna aliquam
-                      erat volutpat. Ut wisi enim ad
-                      minim veniam, quis nostrud exerci
-                      tation ullamcorper suscipit lobortis
-                    </p>
-                    <button type="submit" name="submit" class="btn btn-default">Envoyer</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div id="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="foot-header">
-                Newsletter :
-              </div>
-              <form id="search_form" class="col-md-6 navbar-form navbar-left navbar-input-group" action="#" method="POST">
-                <div class="input-group">
-                  <div class="form-group">
-                    <input name="email" type="email" value="" placeholder="Adresse mail" required>
-                  </div>
-                  <span class="input-group-btn">
-                    <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
-                  </span>
                 </div>
               </form>
             </div>
-            <div class="col-sm-4">
-              <div class="foot-header">
-                Évènement :
-              </div>
-              <div class="foot-links">
-                <ul>
-                  <li><a href="actualites.html">Actualités</a></li>
-                  <li><a href="evenements.html">Évènements, soirées spéciales</a></li>
-                </ul>
-              </div>
+            <div id="tabs-2">
+              <form action="#" class="form1">
+                <div class="row">
+                  <div class="col-sm-3 col-md-3">
+                    <div class="input1_wrapper">
+                      <label>Date</label>
+                      <div class="input1_inner">
+                         <input type='text' class="form-control" id='jourrestaurant' title="Jour'" maxlength="10" name="jour" placeholder="Jour" value=""/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <div class="select1_wrapper">
+                      <label>Heure</label>
+                      <div class="select1_inner">
+                        <select class="select2 select select3" style="width: 100%">
+                          <option value="7">7h</option>
+                          <option value="8">8h</option>
+                          <option value="9">9h</option>
+                          <option value="10">10h</option>
+                          <option value="11">11h</option>
+                          <option value="12">12h</option>
+                          <option value="13">13h</option>
+                          <option value="14">14h</option>
+                          <option value="15">15h</option>
+                          <option value="16">16h</option>
+                          <option value="17">17h</option>
+                          <option value="18">18h</option>
+                          <option value="19">19h</option>
+                          <option value="20">20h</option>
+                          <option value="21">21h</option>
+                          <option value="22">22h</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <div class="input1_wrapper">
+                      <label>Nombre de personnes</label>
+                      <div class="select1_inner select2_inner">
+                        <select class="select2 select select3" style="width: 100%">
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="4">04</option>
+                          <option value="5">05</option>
+                          <option value="6">06</option>
+                          <option value="7">07</option>
+                          <option value="8">08</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <div class="button1_wrapper">
+                      <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-shopping-cart"></i>Réserver</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="col-sm-4">
-              <div class="foot-header">
-                Plus d'informations :
-              </div>
-              <div class="foot-links">
-                <ul>
-                  <li><a href="presse.html">Espace presse</a></li>
-                  <li><a href="recrutement.html">Recrutement</a></li>
-                  <li><a href="plandusite.html">Plan du site</a></li>
-                </ul>
-              </div>
+            <div id="tabs-3">
+              <form action="#" class="form1">
+                <div class="row">
+                  <div class="col-sm-3 col-md-3">
+                    <div class="input1_wrapper">
+                      <label>Date</label>
+                      <div class="input1_inner">
+                        <input type='text' class="form-control" id='jourspa' title="Jour'" maxlength="10" name="jour" placeholder="Jour" value=""/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <div class="select1_wrapper">
+                      <label>Heure</label>
+                      <div class="select1_inner">
+                        <select class="select2 select select3" style="width: 100%">
+                          <option value="9">9h</option>
+                          <option value="10">10h</option>
+                          <option value="11">11h</option>
+                          <option value="12">12h</option>
+                          <option value="13">13h</option>
+                          <option value="14">14h</option>
+                          <option value="15">15h</option>
+                          <option value="16">16h</option>
+                          <option value="17">17h</option>
+                          <option value="18">18h</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <div class="input1_wrapper">
+                      <label>Type de soins</label>
+                      <div class="select1_inner select2_inner">
+                        <select class="select2 select select3" style="width: 100%">
+                          <option value="1">Détente</option>
+                          <option value="2">Découverte</option>
+                          <option value="3">Relaxant</option>
+                          <option value="4">Plaisir</option>
+                          <option value="5">Evasion</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <div class="button1_wrapper">
+                      <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-shopping-cart"></i>Réserver</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div id="tabs-4">
+              <form action="#" class="form1">
+                <div class="row">
+                  <div class="col-sm-9 col-md-9">
+                    <div class="select1_wrapper">
+                      <label>Recherche</label>
+                      <div class="select1_inner search">
+                        <input type="text" placeholder="Votre recherche" name="recherche" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-md-3">
+                    <div class="button1_wrapper">
+                      <button type="submit" class="btn-default btn-form1-submit"><i class="fa fa-search"></i>Recherche</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <div id="lastfooter">
-        <div class="container">
-          <p class="centered"> IESA Multimédia | <a href="#" target="_blank">Mentions légales</a> | <a href="#" target="_blank">Conditions générales de Ventes</a> | <a href="#" onclick="imprimer_page()" target="_blank">Imprimer la page</a></p>
+    </div>
+  </div>
+  <div class="bandeaudescription">
+    <h2>Un hôtel historique</h2>
+  </div>
+  <div class="row  divwhite">
+    <div class="col-sm-8 col-md-8 divwhite">
+      <img width="100%" src="img/16491428_10212123970435009_1605810203_o.jpg" alt="hôtel parimis">
+    </div>
+    <div class="col-sm-4 col-md-4 divwhite presentationhotelhome">
+      <p>L'hôtel Parimis, réputé mondialement pour son service de qualité se situe avenue Montaigne, une des avenues les plus connus de Paris. Découvrez des services de qualités notamment un spa, un restaurant gastronomique et des chambres et suites luxueuse.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-md-4 presentationhotelhome">
+      <p>Découvrez un personnel qualifié et formé pour répondre à vos désirs. Retrouvez le luxe à la française au sein de notre hôtel ayant gagner plusieurs prix dont le golden hospitality reward et le gouvernent Awards.</p>
+    </div>
+    <div class="col-sm-8 col-md-8">
+      <img width="100%" src="img/16491428_10212123970435009_1605810203_o.jpg" alt="hôtel parimis">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-6 descriptionhotelhome">
+      <h1>Le Parimis</h1>
+      <p>L'hôtel Parimis est, sans conteste, l'un des plus beaux hôtels de Paris. Il est désormais l'un des 16 Palaces de France et figure au palmarès du Leading Hôtels of the World.L'hôtel Parimis 5 étoiles entièrement rénové, est l'emblème de la tradition hôtelière parisienne. Situé au coeur de Paris, dispense des prestations de haute qualité et propose un service 5 étoiles pour sa clientèle.Que vous soyez de passage pour un rendez-vous d'affaire, ou que vous souhaitiez passer des vacances luxueuses, réservez votre chambre ou suite à l'hôtel Parimis directement en ligne. Nos prestations sont à la hauteur de vos exigences.
+        Nos services de luxe
+        L'accueil personnalisé représente un point clé du service de l'hôtel Parimis. Nos chambres proposent des prestations adaptées à vos besoins et suivant vos envies. Les soins dispensés au spa sont à la carte. Les menus de notre restaurant également.</p>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class='embed-container maps'>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10498.563491877268!2d2.3019885!3d48.8650582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x533b1319048c8ee2!2sH%C3%B4tel+Parimis!5e0!3m2!1sen!2sfr!4v1485948685680" height="450" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
-    </footer>
-    <script>
-      function imprimer_page(){
-        window.print();
-      }
-    </script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-  </html>
+      <script>
+        $('.maps').click(function () {
+          $('.maps iframe').css("pointer-events", "auto");
+        });
+        $( ".maps" ).mouseleave(function() {
+          $('.maps iframe').css("pointer-events", "none"); 
+        });
+      </script>
+      <div id="parallax1" class="parallax">
+        <div class="bg1 parallax-bg"></div>
+        <div class="overlay"></div>
+        <div class="parallax-content">
+          <div class="container">
+            <div class="backcontact col-sm-12 col-md-12">
+              <form method="POST" id="contact" action="#">
+                <div class="col-sm-8 col-md-8">
+                  <div class="col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="nom" placeholder="Nom" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="prenom" placeholder="Prénom" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="adressemail" placeholder="Adresse mail" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" placeholder="Votre message.." required></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-4 contacttext">
+                  <h1>Contact</h1>
+                  <p>Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit, sed
+                    diam nonummy nibh euismod tincidunt
+                    ut laoreet dolore magna aliquam
+                    erat volutpat. Ut wisi enim ad
+                    minim veniam, quis nostrud exerci
+                    tation ullamcorper suscipit lobortis
+                  </p>
+                  <button type="submit" name="submit" class="btn btn-default">Envoyer</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="foot-header">
+              Newsletter :
+            </div>
+            <form id="search_form" class="col-md-6 navbar-form navbar-left navbar-input-group" action="#" method="POST">
+              <div class="input-group">
+                <div class="form-group">
+                  <input name="email" type="email" value="" placeholder="Adresse mail" required>
+                </div>
+                <span class="input-group-btn">
+                  <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-4">
+            <div class="foot-header">
+              Évènement :
+            </div>
+            <div class="foot-links">
+              <ul>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="evenements.html">Évènements, soirées spéciales</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="foot-header">
+              Plus d'informations :
+            </div>
+            <div class="foot-links">
+              <ul>
+                <li><a href="presse.html">Espace presse</a></li>
+                <li><a href="recrutement.html">Recrutement</a></li>
+                <li><a href="plandusite.html">Plan du site</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="lastfooter">
+      <div class="container">
+        <p class="centered"> IESA Multimédia | <a href="#" target="_blank">Mentions légales</a> | <a href="#" target="_blank">Conditions générales de Ventes</a> | <a href="#" onclick="imprimer_page()" target="_blank">Imprimer la page</a></p>
+      </div>
+    </div>
+  </footer>
+<script>
+    function imprimer_page(){
+      window.print();
+    }
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
