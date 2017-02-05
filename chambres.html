@@ -7,7 +7,29 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <meta name="author" content="Parimis">
+<!-- General -->
+  <meta name="title" content=""><!-- Titre de la page -->
+  <meta name="author" content="Parimis"><!-- Identique pour toutes les pages -->
+  <meta name="description" content=""><!-- Description de la page -->
+  <!-- Facebook -->
+  <meta property="og:title" content=""/><!-- Titre de la page -->
+  <meta property="og:type" content="article"/><!-- website page accueil / article pour autres pages -->
+  <meta property="og:image" content=""/><!-- Lien image de la page (600px) -->
+  <meta property="og:url" content=""/><!-- Url de la page -->
+  <meta property="og:description" content=""/><!-- Description de la page -->
+  <meta property="og:site_name" content="Parimis"/><!-- Identique pour toutes les pages -->
+  <meta property="fb:admins" content="parimis"/><!-- Identique pour toutes les pages -->
+  <!-- Twitter -->
+  <meta name="twitter:image" content=""><!-- Lien image de la page (600px) -->
+  <meta name="twitter:card" content="summary_large_image"><!-- Identique pour toutes les pages -->
+  <meta name="twitter:site" content="@parimis"><!-- Identique pour toutes les pages -->
+  <meta name="twitter:creator" content="@parimis"><!-- Identique pour toutes les pages -->
+  <meta name="twitter:domain" content=""><!-- Url de la page -->
+  <meta name="twitter:title" content=""><!-- Titre de la page -->
+  <meta name="twitter:description" content=""><!-- Description de la page -->
+  <!-- Google -->
+  <link rel="author" href="https://plus.google.com/u/0/+Parimis" /><!-- Identique pour toutes les pages -->
+  <link rel="publisher" href="https://plus.google.com/u/0/+Parimis" /><!-- Identique pour toutes les pages -->
 
  <link href="css/jquery-ui.css" rel="stylesheet">
  <link href="css/bootstrap.css" rel="stylesheet">
@@ -57,7 +79,7 @@
             <header>
               <div class="logo_wrapper">
                 <a href="index.html" class="logo scroll-to">
-                  <img src="img/16443494_10212123291498036_666830644_n.png" alt="Parimis" width="60%" class="img-responsive">
+                  <img src="img/16443494_10212123291498036_666830644_n.png" alt="Parimis" class="img-responsive">
                 </a>
               </div>
             </header>
@@ -90,7 +112,6 @@
                       <li class="valider"><a href="panier.html">Valider</a></li>
                     </ul>
                   </li>
-                </li>
 
                 <li class="sub-menu sub-menu-1"><a href="#langue">Langue<em class="fa fa-angle-down"></em></a>
                   <ul>
@@ -114,12 +135,12 @@
 <div class="bandeaudescription">
  <h2>Chambres classiques</h2>
 </div>
-<div class="row  divwhite">
+<div class="row  divwhite" id="firstchambre">
  <div class="col-sm-6 col-md-6 divwhite">
-  <img width="100%" src="img/chambres/classique.jpeg" alt="hôtel parimis">
+  <img class="img100" src="img/chambres/classique.jpeg" alt="hôtel parimis">
 </div>
 <div class="col-sm-6 col-md-6 divwhite presentationhotelhome">
-  <h3 id="first"><b>Le luxe à porté de main</b></h3>
+  <h3><b>Le luxe à porté de main</b></h3>
   <ul>
    <li>Une superficie de 19 m²</li>
    <li>Lit simple avec matelas en fibre de coco</li>
@@ -148,7 +169,7 @@
  <h3><b>320€ par nuit</b></h3>
 </div>
 <div class="col-sm-6 col-md-6 divwhite">
-  <img width="100%" src="img/chambres/confort.jpeg" alt="hôtel parimis">
+  <img class="img100" src="img/chambres/confort.jpeg" alt="hôtel parimis">
 </div>
 </div>
 <div class="bandeaudescription">
@@ -156,7 +177,7 @@
 </div>
 <div class="row  divwhite">
  <div class="col-sm-6 col-md-6 divwhite">
-  <img width="100%" src="img/chambres/deluxe.jpeg" alt="hôtel parimis">
+  <img class="img100" src="img/chambres/deluxe.jpeg" alt="hôtel parimis">
 </div>
 <div class="col-sm-6 col-md-6 divwhite presentationhotelhome">
   <h3><b>Vivez le rêve</b></h3>
@@ -188,7 +209,7 @@
  <h3><b>655€ par nuit</b></h3>
 </div>
 <div class="col-sm-6 col-md-6 divwhite">
-  <img width="100%" src="img/chambres/suite.jpeg" alt="hôtel parimis">
+  <img class="img100" src="img/chambres/suite.jpeg" alt="hôtel parimis">
 </div>
 </div>
 <footer>
@@ -243,6 +264,7 @@
   </div>
 </div>
 </footer>
+</div>
 <script>
  function imprimer_page() {
   window.print();

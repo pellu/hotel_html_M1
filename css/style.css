@@ -14,11 +14,6 @@ a[href^="tel:"] {
    text-decoration: none;
 }
 
-::selection {
-   background: #888888!important;
-   color: black
-}
-
 ::-moz-selection {
    background: #888888!important;
    color: black
@@ -152,7 +147,9 @@ textarea:-ms-input-placeholder {
    margin-bottom: 50px;
    color: #008080;
 }
-
+img.img100{
+  width: 100%;
+}
 
 /* ============================= header ====================== */
 .liste li{
@@ -166,7 +163,7 @@ li.valider a{
     color: white!important;
     padding: 2px 10px!important;
 }
-.logo {
+.logo img{
    width: 60%;
 }
 
@@ -238,7 +235,6 @@ li.valider a{
 
 .is-sticky .top2_wrapper {
    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-   moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
    background: #fff;
 }
@@ -266,10 +262,8 @@ header {
 .pageavis .nav-tabs > li, .pageavis .nav-pills > li {
     float:none;
     display:inline-block;
-    *display:inline;
-     zoom:1;
 }
-.pageavis .nav-tabs, .nav-pills {
+.pageavis .nav-tabs, .nav-pills{
     text-align:center;
 }
 .pageavis .nav-tabs{
@@ -297,7 +291,7 @@ select.selectavis {
     border-radius: 5px;
 }
 @media (max-width: 767px) {
-   .avis {
+   .avis,.cachebandeau{
       display: none;
       overflow: hidden;
    }
@@ -477,22 +471,7 @@ select.selectavis {
    margin: 0 4px;
 }
 
-
 /* ============================= panier ====================== */
-
-@charset "UTF-8";
-
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
-html {
-   font-family: sans-serif;
-   -ms-text-size-adjust: 100%;
-   -webkit-text-size-adjust: 100%;
-}
-
-body {
-   margin: 0;
-}
 
 article,
 aside,
@@ -14302,11 +14281,12 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
    margin-top: 50px;
    width: 80%;
 }
-
-.presentationhotelhome #first {
+#firstchambre{
+  margin-top: 120px;
+}
+.presentationhotelhome #first,.presentationhotelhome .first {
    margin-top: 40px;
 }
-
 @media (max-width: 767px) {
    .presentationhotelhome {
       margin-right: 30px;
