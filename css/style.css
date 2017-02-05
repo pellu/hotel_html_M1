@@ -14055,6 +14055,13 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
    }
 }
 
+@media (max-width: 600px) {
+   .carousel-inner > .item > img,
+   .carousel-inner > .item > a > img {
+      height: 500px!important;
+   }
+}
+
 .bandeaudescription {
    background-color: #1f1c1b;
    padding: 20px 0;
@@ -14227,7 +14234,7 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
    outline: none;
 }
 
-.tabs1_tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+.tabs1_tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,.tabs1_tabs .ui-tabs-nav li a:hover {
    background: #008080;
    background: rgba(0, 128, 128, 0.7);
    color: white;
@@ -14267,7 +14274,6 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
    display: block;
    width: 12px;
    height: 15px;
-   background: url(../images/m1.png) 0 0 no-repeat;
    position: absolute;
    left: 0;
    top: 2px;
