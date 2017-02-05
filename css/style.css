@@ -13119,6 +13119,9 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
 .post-story a{
   cursor: pointer;
 }
+.post-story{
+  margin-top: -72px;
+}
 #about {
  position: relative;
  padding-top: 60px;
@@ -13165,7 +13168,32 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
  vertical-align: top;
  padding-top: 5px;
 }
-
+.live-comment .form-group{
+  margin-left: 10px!important;
+  margin-right: 10px!important;
+}
+.live-comment .form-group input{
+    height: 48px!important;
+}
+.btn-comment{
+    border: 1px solid #008080;
+    font-family: 'Roboto Condensed', sans-serif!important;
+    font-size: 14px!important;
+    font-weight: bold;
+    padding: 15px 10px;
+    background: #008080;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    color: white;
+}
+.btn-comment:hover{
+    border: 1px solid #1f1c1b;
+    background: #1f1c1b;
+    color: white;
+}
 .tour2 {
  background: #fff;
  margin-bottom: 30px;
@@ -13580,8 +13608,22 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
 .tabs2_content .ui-tabs-panel {
  padding: 0px;
 }
-
-
+.share_post li:first-child a:hover{
+  background-color: #4862a3;
+  border: 1px solid #4862a3;
+}
+.share_post li:nth-child(2) a:hover{
+  background-color: #337ab7;
+  border: 1px solid #337ab7;
+}
+.share_post li:nth-child(3) a:hover{
+  background-color: #d02022;
+  border: 1px solid #d02022;
+}
+.share_post li:last-child a:hover{
+  background-color: #0177b5;
+  border: 1px solid #0177b5;
+}
 /* ============================= blog ====================== */
 
 .post-short {
@@ -14148,7 +14190,6 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
 }
 
 .presentationhotelhome p {
- margin-top: 50px;
  width: 80%;
 }
 #firstchambre{
@@ -14512,7 +14553,6 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
   background-color: #008080;
   border-radius: 0px;
   font-size: 20px;
-  margin-left: -10px;
 }
 .partageamis:hover{
   background-color: #1f1c1b!important;
