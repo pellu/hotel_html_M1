@@ -294,6 +294,12 @@ select.selectavis {
       overflow: hidden;
    }
 }
+@media (max-width: 767px) {
+   .avis,.cachebandeau{
+      display: none;
+      overflow: hidden;
+   }
+}
 .avis .carousel-control.left,
 .avis .carousel-control.right {
    background: none;
@@ -14121,12 +14127,6 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
    background-color: #008080;
 }
 
-@media (max-width: 767px) {
-   .descriptionhotelhome {
-      margin-right: 30px;
-   }
-}
-
 .presentationhotelhome {
    padding-top: 12px;
    color: black;
@@ -14634,28 +14634,21 @@ footer .btn-default:hover {
 
 footer input {
    color: black;
-   width: 320px;
+   width: 100%;
    height: 31px;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px){
    footer input {
-      width: 254px;
+      width: 254px!important;
    }
 }
 
-@media (min-width: 668px) and (max-width: 991px) {
+@media (min-width: 1200px){
    footer input {
-      width: 181px;
+      width: 321px!important;
    }
 }
-
-@media (max-width: 667px) {
-   footer input {
-      width: 100%;
-   }
-}
-
 
 /* ============================= parallax ====================== */
 
