@@ -9,7 +9,7 @@ html[xmlns] .slides{display:block;}
 
 .slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
 .slides{list-style:none outside none;margin:0;padding: 0;}
-.slides img{width:100%; border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
+.slides img{width:100%; border-radius:0px; -webkit-border-radius:0px;}
 
 #flexslider .flex-control-nav{display:inline-block; padding: 0; margin: 0; position: absolute; right: 0; left: 0; bottom: 95px; z-index:5; overflow:hidden;list-style:none; text-align: center; line-height: 1;}
 #flexslider .flex-control-nav li{display: inline-block; float:none; width:11px; height:11px; margin: 0 8px;}
@@ -35,37 +35,21 @@ html[xmlns] .slides{display:block;}
 .flex-caption .txt2{font-family: 'Lato'; font-weight: 400; font-size: 40px; line-height: 1.1; color: #fff; text-transform: uppercase; text-shadow:1px 1px 3px rgba(0, 0, 0, 0.5); padding-bottom: 10px;}
 .flex-caption .txt3{padding-top: 10px; text-align: center;}
 
-
-
-
-
 @media (max-width: 1199px) {
   #flexslider{min-height: 559px;}
   .flex-caption .img img{max-width: 200px;}
-
-
 }
-
 @media (max-width: 991px) {
   #flexslider{min-height: 431px;}
   .flex-caption{margin-top: -220px;}
   .flex-caption .img img{max-width: 120px;}
   .flex-caption .txt1{font-size: 40px;}
   .flex-caption .txt2{font-size: 20px;}
-
-
-
 }
-
 @media (max-width: 767px) {
   #flexslider{min-height: 180px;}
-
   .flex-caption{display: none;}
-
 }
-
 @media (max-width: 480px) {
   #flexslider .flex-direction-nav:before{width: 314px; height: 48px; margin-left: -157px; background-size: 100% auto;}
-
-
 }
