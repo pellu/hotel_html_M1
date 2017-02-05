@@ -289,15 +289,13 @@ select.selectavis {
     border-radius: 5px;
 }
 @media (max-width: 767px) {
-   .avis,.cachebandeau{
-      display: none;
-      overflow: hidden;
+   .laisseravis .well{
+      width: 80%;
+      margin-left: auto;
+  margin-right: auto;
    }
-}
-@media (max-width: 767px) {
-   .avis,.cachebandeau{
-      display: none;
-      overflow: hidden;
+   .laisseravis .well select.selectavis{
+    width: 100%!important;
    }
 }
 .avis .carousel-control.left,
@@ -310,10 +308,6 @@ select.selectavis {
 }
 .avis .carousel-control.right {
    right: -25px;
-}
-.avis .broun-block {
-   background: url("http://myinstantcms.ru/images/bg-broun1.jpg") repeat scroll center top rgba(0, 0, 0, 0);
-   padding-bottom: 34px;
 }
 .avis {
    background-color: #2d2928;
@@ -14228,6 +14222,10 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
    background: rgba(255, 255, 255, 0.7);
    float: none;
    display: block;
+   transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 
 .tabs1_tabs .ui-tabs-nav .ui-tabs-anchor:focus {
@@ -14409,6 +14407,7 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
    font-family: inherit;
    display: block;
    width: 100%;
+  box-shadow: none;
 }
 
 .input1_inner input:focus {
@@ -14434,6 +14433,10 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
    background: white;
    color: #008080;
    border: #008080 solid 1px;
+   transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 
 .btn-form1-submit:focus {
@@ -14551,6 +14554,10 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
 
 .menu_bot li a:hover {
    color: #008080;
+   transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 
 #lastfooter {
@@ -14567,6 +14574,10 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
 
 #lastfooter a:hover {
    color: #008080;
+   transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 
 footer {
@@ -14860,6 +14871,10 @@ footer input {
    border-radius: 0;
    -moz-border-radius: 0;
    -webkit-border-radius: 0;
+   transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
 }
 
 .navbar_ .nav > li > a {
