@@ -147,7 +147,7 @@ textarea:-ms-input-placeholder {
   background:rgba(0, 0, 0, 0.2);
   z-index:2;
   width: 100%;
-  height: 445px;
+  height: 450px;
 }
 .pagepashome {
  padding-top: 100px;
@@ -270,9 +270,17 @@ header {
  z-index: 50;
 }
 
-@media (max-width:767px){
+@media (max-width:900px){
   .btn-default.btn-form1-submit.mbbutton{
     margin-bottom: 30px;
+    margin-top: -30px;
+  }
+  .presentationhotelhomeright{
+    margin-left: 50px!important;
+    margin-right: 60px!important;
+  }
+  .imgdisplaymobile img{
+    display: none;
   }
 }
 
@@ -13623,7 +13631,8 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
 }
 
 .post-short .post-header .post-image {
- position: relative;
+    position: relative;
+
 }
 
 .post-short .post-header .post-image a {
@@ -13655,6 +13664,7 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
 
 .post-short .post-story {
  padding: 20px;
+ margin-top: 0px;
  background: #eff5f7;
  border: 1px solid #e5ecef;
 }
@@ -14115,6 +14125,18 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
  height: 70px;
  width: 100%;
 }
+.descriptionparimis p{
+    font-size: 14px;
+    color: white;
+    margin-left: 50px;
+    margin-right: -50px;
+    padding-right: 60px;
+}
+@media(max-width: 1100px){
+  .descriptionparimis p{
+    font-size: 12px;
+  }
+}
 
 .bandeaudescription h2 {
  color: white;
@@ -14156,12 +14178,20 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
  position: relative;
 }
 
-.descriptionhotelhome p {
+.textevideo p {
  padding-top: 12px;
- color: white;
+ background-color: white;
  margin-left: 50px;
  margin-right: 40px!important;
  padding-right: 50px;
+}
+
+{
+  padding-top: 12px;
+  color: black;
+  background: none;
+  margin-left: -30px;
+  margin-right: -30px;
 }
 
 .descriptionhotelhome h1 {
@@ -14177,13 +14207,14 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
 .presentationhotelhome {
  padding-top: 12px;
  color: black;
- margin-left: 50px;
- margin-right: -50px;
- padding-right: 50px;
+ margin-left: 10px;
+ margin-right: -10px;
+ padding-right: 10px;
 }
 
 .presentationhotelhome p {
  width: 80%;
+ font-size: 13px;
 }
 #firstchambre{
   margin-top: 120px;
@@ -14191,9 +14222,33 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
 .presentationhotelhome #first,.presentationhotelhome .first {
  margin-top: 40px;
 }
+.presentationhotelhomeright{
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
 @media (max-width: 767px) {
  .presentationhotelhome {
-  margin-right: 30px;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 768px) {
+ .textcentrer{
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .presentationhotelhome p{
+    width: 90%;
+    margin-left: 40px;
+    margin-right: -40px;
+  }
+}
+
+@media (min-width: 1200px) {
+.presentationhotelhome p {
+ font-size: 14px;
 }
 }
 
@@ -15406,5 +15461,6 @@ h3 {
 }
 
 .rightH2 {
- text-indent: 65%;
+  float: right;
+  margin-right: 50px;
 }
