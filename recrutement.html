@@ -191,112 +191,110 @@
             </div>
          </div>
       </div>
-      <footer>
-         <div id="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-4">
-                     <div class="foot-header">
-                        Newsletter :
-                     </div>
-                     <form id="search_form" class="col-md-6 navbar-form navbar-left navbar-input-group" action="#" method="POST">
-                        <div class="input-group">
-                           <div class="form-group">
-                              <input name="email" type="email" value="" placeholder="Adresse mail" required>
-                           </div>
-                           <span class="input-group-btn">
-                              <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
-                           </span>
-                        </div>
-                     </form>
-                     <div class="foot-header">
-                        Recherche :
-                     </div>
-                     <form id="search_form" class="col-md-6 navbar-form navbar-left navbar-input-group" action="#" method="POST">
-                        <div class="input-group">
-                           <div class="form-group">
-                              <input name="recherche" type="text" value="" placeholder="Votre recherche" required>
-                           </div>
-                           <span class="input-group-btn">
-                              <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                           </span>
-                        </div>
-                     </form>
+     <footer>
+      <div id="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-4">
+                  <div class="foot-header">
+                     Newsletter :
                   </div>
-                  <div class="col-sm-4">
-                     <div class="foot-header">
-                        Évènement :
+                  <form id="newsletter_form" class="col-md-6 navbar-form navbar-left navbar-input-group" action="#" method="POST">
+                     <div class="input-group">
+                        <div class="form-group">
+                           <input name="email" type="email" value="" placeholder="Adresse mail" required>
+                        </div>
+                        <span class="input-group-btn">
+                           <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-check"></i></button>
+                        </span>
                      </div>
-                     <div class="foot-links">
-                        <ul>
-                           <li><a href="actualites.html">Actualités</a></li>
-                           <li><a href="evenements.html">Évènements, soirées spéciales</a></li>
-                           <li><a href="avis.html">Vos avis</a></li>
-                        </ul>
-                     </div>
-                     <div class="foot-header">
-                        Plus d'informations :
-                     </div>
-                     <div class="foot-links">
-                        <ul>
-                           <li><a href="presse.html">Espace presse</a></li>
-                           <li><a href="recrutement.html">Recrutement</a></li>
-                           <li><a href="plandusite.html">Plan du site</a></li>
-                        </ul>
-                     </div>
+                  </form>
+                  <div class="foot-header">
+                     Recherche :
                   </div>
-                  <div class="col-sm-4">
-                     <div class="foot-header">
-                        Réseaux sociaux :
+                  <form id="search_form" class="col-md-6 navbar-form navbar-left navbar-input-group" action="#" method="POST">
+                     <div class="input-group">
+                        <div class="form-group">
+                           <input name="recherche" type="text" value="" placeholder="Votre recherche" required>
+                        </div>
+                        <span class="input-group-btn">
+                           <button type="submit" name="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                        </span>
                      </div>
-                     <div class="foot-links">
-                        <div class="row">
-                           <div class="col-xs-3">
+                  </form>
+               </div>
+               <div class="col-sm-4">
+                  <div class="foot-header">
+                     Évènement :
+                  </div>
+                  <div class="foot-links">
+                     <ul>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="evenements.html">Évènements, soirées spéciales</a></li>
+                        <li><a href="avis.html">Vos avis</a></li>
+                     </ul>
+                  </div>
+                  <div class="foot-header">
+                     Plus d'informations :
+                  </div>
+                  <div class="foot-links">
+                     <ul>
+                        <li><a href="presse.html">Espace presse</a></li>
+                        <li><a href="recrutement.html">Recrutement</a></li>
+                        <li><a href="plandusite.html">Plan du site</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="foot-header">
+                     Réseaux sociaux :
+                  </div>
+                  <div class="foot-links">
+                     <div class="row">
+                        <div class="col-xs-3">
                            <a href="#" class="btn rsfooter-social rsfooter-size-50 rsfooter-gradient rsfooter-facebook"><i class="fa fa-facebook"></i></a>
-                           </div>
-                           <div class="col-xs-3">
-                           <a href="#" class="btn rsfooter-social rsfooter-size-50 rsfooter-gradient rsfooter-twitter"><i class="fa fa-twitter"></i></a>
-                           </div>
-                           <div class="col-xs-3">
-                           <a href="#" class="btn rsfooter-social rsfooter-size-50 rsfooter-gradient rsfooter-youtube"><i class="fa fa-youtube"></i></a>
-                           </div>
-                           <div class="col-xs-3">
-                           <a href="#" class="btn rsfooter-social rsfooter-size-50 rsfooter-gradient rsfooter-linkedin"><i class="fa fa-linkedin"></i></a>
-                           </div>
                         </div>
-                     </div>
-                     <div class="foot-header">
-                        Partager :
-                     </div>
-                     <div class="foot-links">
-                        <ul>
-                           <div class="modal fade" id="partage-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                             <div class="modal-dialog">
-                              <div class="partagemodal-container">
-                               <i class="fa fa-times icon_pop" aria-hidden="true"></i>
-                               <h1>Je partage la page à un ami</h1><br>
-                               <form>
-                                <div class="col-sm-6">
-                                 <input type="text" name="prenom" placeholder="Prénom de votre ami">
-                              </div>
-                              <div class="col-sm-6">               
-                                 <input type="text" name="votreprenom" placeholder="Votre prénom">
-                              </div>
-                              <input type="email" name="email" placeholder="Email de votre ami">
-                              <label></label>               
-                              <textarea name="message" placeholder="Un message pour votre ami ?"></textarea>
-                              <input type="submit" name="partage" class="partage partagemodal-submit" value="Envoi">
-                           </form>
-
+                        <div class="col-xs-3">
+                           <a href="#" class="btn rsfooter-social rsfooter-size-50 rsfooter-gradient rsfooter-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <div class="col-xs-3">
+                           <a href="#" class="btn rsfooter-social rsfooter-size-50 rsfooter-gradient rsfooter-youtube"><i class="fa fa-youtube"></i></a>
+                        </div>
+                        <div class="col-xs-3">
+                           <a href="#" class="btn rsfooter-social rsfooter-size-50 rsfooter-gradient rsfooter-linkedin"><i class="fa fa-linkedin"></i></a>
                         </div>
                      </div>
                   </div>
-                  <button type="button" class="button btn btn-default partageamis" data-toggle="modal" data-target="#partage-modal">Je partage à un ami</button>
-               </ul>
+                  <div class="foot-header">
+                     Partager :
+                  </div>
+                  <div class="foot-links">
+                     <div class="modal fade" id="partage-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+                       <div class="modal-dialog">
+                        <div class="partagemodal-container">
+                         <i class="fa fa-times icon_pop" aria-hidden="true"></i>
+                         <h1>Je partage la page à un ami</h1><br>
+                         <form>
+                          <div class="col-sm-6">
+                           <input type="text" name="prenom" placeholder="Prénom de votre ami">
+                        </div>
+                        <div class="col-sm-6">               
+                           <input type="text" name="votreprenom" placeholder="Votre prénom">
+                        </div>
+                        <input type="email" name="email" placeholder="Email de votre ami">
+                        <label></label>               
+                        <textarea name="message" placeholder="Un message pour votre ami ?"></textarea>
+                        <input type="submit" name="partage" class="partage partagemodal-submit" value="Envoi">
+                     </form>
+
+                  </div>
+               </div>
             </div>
+            <button type="button" class="button btn btn-default partageamis" data-toggle="modal" data-target="#partage-modal">Je partage à un ami</button>
          </div>
       </div>
    </div>
+</div>
 </div>
 <div id="lastfooter">
    <div class="container">
@@ -304,6 +302,7 @@
    </div>
 </div>
 </footer>
+</div>
 <script>
    function imprimer_page() {
       window.print();
