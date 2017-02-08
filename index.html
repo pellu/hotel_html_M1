@@ -701,10 +701,9 @@
                <br>Email : contact@hotel.parimis.com
                <br>Adresse : 1 avenue Montaigne, 75 008 Paris</p>
             </div>
-            <div class="col-sm-6 col-md-6">
-               <div class='embed-container maps'>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10498.563491877268!2d2.3019885!3d48.8650582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x533b1319048c8ee2!2sH%C3%B4tel+Parimis!5e0!3m2!1sen!2sfr!4v1485948685680" height="450" style="border:0" allowfullscreen></iframe>
-               </div>
+            <div class="col-sm-6 col-md-6" style="position:relative;">
+               <div class="colormaps"></div>
+                  <iframe style="position:absolute;z-index:1;width: 100%;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10498.563491877268!2d2.3019885!3d48.8650582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x533b1319048c8ee2!2sH%C3%B4tel+Parimis!5e0!3m2!1sen!2sfr!4v1485948685680" height="450" style="border:0" allowfullscreen></iframe>
             </div>
          </div>
          <div class="bandeaudescription cachebandeau">
@@ -1067,7 +1066,7 @@
                            <div class="modal fade" id="partage-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                              <div class="modal-dialog">
                               <div class="partagemodal-container">
-                               <i class="fa fa-times icon_pop" aria-hidden="true"></i>
+                              <button type="button" class="fa fa-times icon_pop fermermodal" class="close" data-dismiss="modal" aria-label="Close"></button>
                                <h1>Je partage la page à un ami</h1><br>
                                <form>
                                 <div class="col-sm-6">
@@ -1081,7 +1080,6 @@
                               <textarea name="message" placeholder="Un message pour votre ami ?"></textarea>
                               <input type="submit" name="partage" class="partage partagemodal-submit" value="Envoi">
                            </form>
-
                         </div>
                      </div>
                   </div>
@@ -1103,12 +1101,11 @@
       window.print();
    }
       //Système pour google maps obligatoirement en bas de page
-      $('.maps').click(function () {
-         $('.maps iframe').css("pointer-events", "auto");
+      $('.colormaps').click(function () {
+         $('.colormaps').css("display", "none");
       });
-
-      $(".maps").mouseleave(function () {
-         $('.maps iframe').css("pointer-events", "none");
+      $('.colormaps').click(function () {
+         $('.colormaps').css("display", "none");
       });
    </script>
    <script src="js/bootstrap.min.js"></script>

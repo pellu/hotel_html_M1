@@ -353,9 +353,6 @@ $(document).ready(function() {
           easing: "easeInOutExpo"
         });
       }
-
-
-
       event.preventDefault();
     });
 

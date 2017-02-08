@@ -142,6 +142,13 @@ textarea:-ms-input-placeholder {
  width: 100%;
 }
 
+.colormaps{
+  position:absolute;
+  background:rgba(0, 0, 0, 0.2);
+  z-index:2;
+  width: 100%;
+  height: 445px;
+}
 .pagepashome {
  padding-top: 100px;
  margin-bottom: 50px;
@@ -170,6 +177,15 @@ li.valider a{
 }
 .logo img{
  width: 60%;
+}
+
+@media (max-width: 600px){
+  .logo img{
+    width: 200px;
+  }
+  .logo_wrapper{
+    width: 200px;
+  }
 }
 
 #panier {
@@ -253,6 +269,13 @@ header {
  margin-top: -30px;
  z-index: 50;
 }
+
+@media (max-width:767px){
+  .btn-default.btn-form1-submit.mbbutton{
+    margin-bottom: 30px;
+  }
+}
+
 /* ============================= header ====================== */
 .plandusite a{
   color: #008080!important;
@@ -424,6 +447,7 @@ select.selectavis {
  margin: 20px 0;
  font-size: 24px;
  color: #FFD700;
+ cursor: pointer;
 }
 
 .laisseravis {
@@ -439,8 +463,9 @@ select.selectavis {
 .laisseravis input {
  margin-bottom: 10px;
 }
-
-
+textarea#new-review.form-control.animated.undefined.visible{
+  height: 80px!important;
+}
 /* ============================= content ====================== */
 
 #content {
@@ -2926,7 +2951,6 @@ select[multiple].input-lg,
  height: 34px;
  line-height: 34px;
  text-align: center;
- pointer-events: none;
 }
 
 .input-lg + .form-control-feedback,
@@ -3221,7 +3245,6 @@ select[multiple].input-lg,
  font-weight: normal;
  text-align: center;
  vertical-align: middle;
- touch-action: manipulation;
  cursor: pointer;
  background-image: none;
  border: 1px solid transparent;
@@ -3230,10 +3253,6 @@ select[multiple].input-lg,
  font-size: 14px;
  line-height: 1.42857;
  border-radius: 4px;
- -webkit-user-select: none;
- -moz-user-select: none;
- -ms-user-select: none;
- user-select: none;
 }
 
 .btn:focus,
@@ -3270,11 +3289,6 @@ fieldset[disabled] .btn {
  filter: alpha(opacity=65);
  -webkit-box-shadow: none;
  box-shadow: none;
-}
-
-a.btn.disabled,
-fieldset[disabled] a.btn {
- pointer-events: none;
 }
 
 .btn-default {
@@ -4226,7 +4240,6 @@ tbody.collapse.in {
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
  position: absolute;
  clip: rect(0, 0, 0, 0);
- pointer-events: none;
 }
 
 .input-group {
@@ -5634,15 +5647,6 @@ a.thumbnail.active {
  border-color: #337ab7;
 }
 
-@-webkit-keyframes progress-bar-stripes {
- from {
-  background-position: 40px 0;
-}
-to {
-  background-position: 0 0;
-}
-}
-
 @keyframes progress-bar-stripes {
  from {
   background-position: 40px 0;
@@ -6547,6 +6551,11 @@ button.close {
 
 .modal-open {
  overflow: hidden;
+}
+
+.fermermodal{
+  background-color: transparent;
+  border: 0px;
 }
 
 .modal {
@@ -7603,11 +7612,6 @@ button.close {
    padding: 20px;
  }
 
- .pe-n {
-   pointer-events: none;
- }
-
-
 /*------------------------------------
   ALERT STYLES
   ------------------------------------*/
@@ -8328,7 +8332,6 @@ button.close {
 }
 .language--global .dropdown-menu > li.active > a {
   color: #777777;
-  pointer-events: none;
   background-color: transparent;
 }
 }
@@ -8542,7 +8545,6 @@ button.close {
 .navigation > ul > li .folder {
  color: #111;
  padding-bottom: 5px;
- pointer-events: none;
  /*---------------- TABLET SPECIFIC --------------------*/
 }
 
@@ -9149,7 +9151,6 @@ MR - This was breaking checkboxes that are supposed to be inline.
 
   .deactivated .deactivate__section {
    opacity: 0.2 !important;
-   pointer-events: none !important;
  }
 
  .wizard {
@@ -10380,10 +10381,6 @@ MR - This was breaking checkboxes that are supposed to be inline.
    font-weight: 300;
  }
 
- .inactivated {
-   pointer-events: none;
- }
-
  .card--app .card__inner {
    box-shadow: none;
    border-width: 1px 0 0 0;
@@ -11485,10 +11482,6 @@ MR - This was breaking checkboxes that are supposed to be inline.
  border-width: 4px 0;
 }
 
-.pipeline--wrapper.view-all .pipeline__stage.active {
- pointer-events: auto;
-}
-
 .pipeline__stage {
  background-color: #ffffff;
  width: 100%;
@@ -11519,10 +11512,6 @@ MR - This was breaking checkboxes that are supposed to be inline.
   left: 0;
   z-index: 10;
 }
-}
-
-.pipeline__stage.active {
- pointer-events: none;
 }
 
 .pipeline__stage.active .pipeline__icon {
@@ -12258,7 +12247,6 @@ MR - This was breaking checkboxes that are supposed to be inline.
  font-size: 0.8125rem;
  text-align: center;
  line-height: 20px;
- user-select: none;
  cursor: default;
  border-right: 1px solid #dbdbdb;
 }
@@ -14102,11 +14090,21 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
 }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 551px) and (max-width: 600px) {
  .carousel-inner > .item > img,
  .carousel-inner > .item > a > img {
   height: 500px!important;
 }
+}
+
+@media (max-width: 550px) {
+ .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+  height: 300px!important;
+  }
+  .carousel {
+    height: 300px!important;
+  }
 }
 
 .bandeaudescription {
@@ -14142,12 +14140,7 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
  outline: none;
 }
 
-.scrolloff {
- pointer-events: none;
-}
-
 .maps iframe {
- pointer-events: none;
  margin-bottom: -7px!important;
 }
 
@@ -14719,6 +14712,10 @@ a.btn-default.btn7.readmore:hover,a.btn-default.btn7.readmore:focus{
    height: 30px;
    margin-top: 30px;
  }
+
+ #lastfooter .container{
+  background-color: black;
+  }
 
  #lastfooter a {
    color: white;
